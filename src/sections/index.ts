@@ -1,0 +1,9 @@
+export { Hero } from './Hero';
+export { Story } from './Story';
+export { Mission } from './Mission';
+export { Vision } from './Vision';
+export { Creations } from './Creations';
+export { Philosophy } from './Philosophy';
+export { Actions } from './Actions';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
