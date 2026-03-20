@@ -8,11 +8,10 @@ const BRAND_PURPLE = '#9F81B9';
 
 type BuildingShape = 'box' | 'cylinder' | 'curved' | 'stepped' | 'slanted';
 
-function Building({ position, delay, args, type, shape }: {
+function Building({ position, delay, args, shape }: {
     position: [number, number, number],
     delay: number,
     args: [number, number, number],
-    type: 'residential' | 'commercial',
     shape: BuildingShape
 }) {
     const groupRef = useRef<THREE.Group>(null);
@@ -112,7 +111,6 @@ function ConstructionScene() {
             const isCommercial = ['cylinder', 'curved', 'box'].includes(shape);
             return {
                 shape,
-                type: (isCommercial ? 'commercial' : 'residential') as 'commercial' | 'residential',
                 position: [
                     (Math.random() - 0.5) * 18,
                     0,

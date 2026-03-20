@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react';
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { GridLines } from '@/components/backgrounds';
-import { ArrowUpRight, Home, Key, TrendingUp } from 'lucide-react';
+import { ArrowUpRight, Home, Key, TrendingUp, type LucideIcon } from 'lucide-react';
 
 interface ActionCardProps {
   title: string;
   subtitle: string;
   description: string;
-  icon: React.ElementType;
+  icon: LucideIcon;
   index: number;
   gradient: string;
 }
