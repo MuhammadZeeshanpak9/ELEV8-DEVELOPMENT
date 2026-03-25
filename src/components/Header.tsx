@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles, BookOpen, Target, Eye, Gem, Compass, TrendingUp, Send } from 'lucide-react';
 import logo from '@/assets/Logo/1000077563.jpg';
 
 const navLinks = [
-  { label: 'Hi YOU', href: '#hero' },
-  { label: 'Our Story', href: '#story' },
-  { label: 'Mission', href: '#mission' },
-  { label: 'Vision', href: '#vision' },
-  { label: 'Creations', href: '#creations' },
-  { label: 'Philosophy', href: '#philosophy' },
-  { label: 'Invest', href: '#actions' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Hi YOU', href: '#hero', icon: Sparkles },
+  { label: 'Our Story', href: '#story', icon: BookOpen },
+  { label: 'Mission', href: '#mission', icon: Target },
+  { label: 'Vision', href: '#vision', icon: Eye },
+  { label: 'Creations', href: '#creations', icon: Gem },
+  { label: 'Philosophy', href: '#philosophy', icon: Compass },
+  { label: 'Invest', href: '#actions', icon: TrendingUp },
+  { label: 'Contact', href: '#contact', icon: Send },
 ];
 
 export function Header() {
@@ -154,9 +154,10 @@ export function Header() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    className="px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300"
+                    className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300"
                   >
-                    {link.label}
+                    <link.icon size={18} strokeWidth={1.5} className="opacity-70" />
+                    <span className="font-medium tracking-wide">{link.label}</span>
                   </motion.a>
                 ))}
                 <motion.a
