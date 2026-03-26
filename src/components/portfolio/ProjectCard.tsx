@@ -10,13 +10,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'RENT':
-        return 'bg-blue-500/20 text-blue-300 border-blue-500/30';
+        return 'bg-blue-50 text-blue-600 border-blue-200';
       case 'BUY':
-        return 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30';
+        return 'bg-emerald-50 text-emerald-600 border-emerald-200';
       case 'INVEST':
-        return 'bg-purple-500/20 text-purple-300 border-purple-500/30';
+        return 'bg-purple-50 text-purple-600 border-purple-200';
       default:
-        return 'bg-zinc-500/20 text-zinc-300 border-zinc-500/30';
+        return 'bg-gray-100 text-gray-600 border-gray-200';
     }
   };
 
@@ -24,7 +24,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <Link to={`/portfolio/project/${project.id}`}>
       <motion.div
         whileHover={{ y: -8 }}
-        className="group bg-zinc-900 rounded-2xl overflow-hidden border border-white/5 cursor-pointer flex flex-col h-full"
+        className="group bg-white rounded-2xl overflow-hidden border border-gray-200 cursor-pointer flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300"
       >
         <div className="relative h-64 overflow-hidden">
           <img
@@ -43,14 +43,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-display font-semibold text-white mb-2 line-clamp-1">
+          <h3 className="text-xl font-display font-semibold text-gray-900 mb-2 line-clamp-1">
             {project.title}
           </h3>
           <p className="text-brand-400 font-medium mb-4">{project.price}</p>
-          <p className="text-sm text-gray-400 mb-4 line-clamp-2 flex-grow">
+          <p className="text-sm text-gray-500 mb-4 line-clamp-2 flex-grow">
             {project.description}
           </p>
-          <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-500">
+          <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-400">
             <span>{project.stats}</span>
           </div>
         </div>

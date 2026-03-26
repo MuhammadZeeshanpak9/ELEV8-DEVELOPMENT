@@ -18,18 +18,18 @@ export function ProjectDetails() {
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'RENT':
-        return 'bg-blue-500/20 text-blue-300 border-blue-400/30';
+        return 'bg-blue-50 text-blue-600 border-blue-200';
       case 'BUY':
-        return 'bg-emerald-500/20 text-emerald-300 border-emerald-400/30';
+        return 'bg-emerald-50 text-emerald-600 border-emerald-200';
       case 'INVEST':
-        return 'bg-purple-500/20 text-purple-300 border-purple-400/30';
+        return 'bg-purple-50 text-purple-600 border-purple-200';
       default:
-        return 'bg-zinc-500/20 text-zinc-300 border-zinc-400/30';
+        return 'bg-gray-100 text-gray-600 border-gray-200';
     }
   };
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20">
+    <div className="min-h-screen bg-white text-gray-900 pt-28 pb-20">
       {/* Hero Image */}
       <div className="relative h-[50vh] mb-16 px-6 lg:px-16">
         <div className="max-w-7xl mx-auto h-full">
@@ -43,7 +43,7 @@ export function ProjectDetails() {
             {region && continent && (
               <Link
                 to={`/portfolio/${project.continentId}/${project.regionId}`}
-                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors"
               >
                 <ArrowLeft size={16} />
                 {region.name}
@@ -62,7 +62,7 @@ export function ProjectDetails() {
               alt={project.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
           </motion.div>
         </div>
       </div>
@@ -83,36 +83,36 @@ export function ProjectDetails() {
                 >
                   {project.type}
                 </span>
-                <h1 className="text-4xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+                <h1 className="text-4xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight">
                   {project.title}
                 </h1>
-                <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                <p className="text-lg text-gray-500 leading-relaxed mb-8">
                   {project.description}
                 </p>
 
                 {/* Details */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                  <div className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200">
                     <MapPin size={20} className="text-brand-400 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Location</p>
-                      <p className="text-sm text-white font-medium">
+                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Location</p>
+                      <p className="text-sm text-gray-900 font-medium">
                         {region?.name}, {continent?.name}
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                  <div className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200">
                     <Tag size={20} className="text-brand-400 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Price</p>
-                      <p className="text-sm text-white font-medium">{project.price}</p>
+                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Price</p>
+                      <p className="text-sm text-gray-900 font-medium">{project.price}</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                  <div className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200">
                     <BarChart3 size={20} className="text-brand-400 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Details</p>
-                      <p className="text-sm text-white font-medium">{project.stats}</p>
+                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Details</p>
+                      <p className="text-sm text-gray-900 font-medium">{project.stats}</p>
                     </div>
                   </div>
                 </div>
@@ -124,15 +124,15 @@ export function ProjectDetails() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="bg-white/5 rounded-2xl border border-white/10 p-8 h-fit sticky top-28"
+              className="bg-gray-50 rounded-2xl border border-gray-200 p-8 h-fit sticky top-28"
             >
               <p className="text-brand-400 text-sm font-semibold uppercase tracking-widest mb-2">
                 Interested?
               </p>
-              <h3 className="text-2xl font-display font-bold text-white mb-3">
+              <h3 className="text-2xl font-display font-bold text-gray-900 mb-3">
                 Get in Touch
               </h3>
-              <p className="text-gray-400 text-sm mb-8">
+              <p className="text-gray-500 text-sm mb-8">
                 Our team is ready to provide you with all the details about this property and guide you through the next steps.
               </p>
               <Link
@@ -143,7 +143,7 @@ export function ProjectDetails() {
               </Link>
               <Link
                 to="/portfolio"
-                className="block w-full text-center py-3 rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-white/20 text-sm mt-3 transition-colors duration-300"
+                className="block w-full text-center py-3 rounded-xl border border-gray-200 text-gray-500 hover:text-gray-900 hover:border-gray-400 text-sm mt-3 transition-colors duration-300"
               >
                 Browse More Properties
               </Link>

@@ -15,7 +15,7 @@ export function RegionsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 px-6 lg:px-16">
+    <div className="min-h-screen bg-white text-gray-900 pt-28 pb-20 px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Back link */}
         <motion.div
@@ -26,7 +26,7 @@ export function RegionsPage() {
         >
           <Link
             to="/portfolio"
-            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors"
           >
             <ArrowLeft size={16} />
             All Continents
@@ -50,7 +50,7 @@ export function RegionsPage() {
             <p className="text-brand-400 text-sm font-semibold uppercase tracking-widest mb-3">
               Portfolio / {continent.name}
             </p>
-            <h1 className="text-5xl font-display font-bold text-white mb-3">
+            <h1 className="text-5xl font-display font-bold text-white mb-3" >
               {continent.name}
             </h1>
             <p className="text-gray-300 max-w-xl">{continent.description}</p>
@@ -62,7 +62,7 @@ export function RegionsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="text-2xl font-display font-semibold text-white mb-8"
+          className="text-2xl font-display font-semibold text-gray-900 mb-8"
         >
           Select a Region
         </motion.h2>
@@ -82,7 +82,7 @@ export function RegionsPage() {
         </div>
 
         {regions.length === 0 && (
-          <div className="text-center py-24 text-gray-500">
+          <div className="text-center py-24 text-gray-400">
             No regions found for this continent.
           </div>
         )}

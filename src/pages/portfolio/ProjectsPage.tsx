@@ -38,7 +38,7 @@ export function ProjectsPage() {
       : allProjects.filter((p) => p.type === activeFilter);
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 px-6 lg:px-16">
+    <div className="min-h-screen bg-white text-gray-900 pt-28 pb-20 px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
         <motion.div
@@ -49,7 +49,7 @@ export function ProjectsPage() {
         >
           <Link
             to={`/portfolio/${continentId}`}
-            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors"
           >
             <ArrowLeft size={16} />
             {continent.name}
@@ -99,13 +99,13 @@ export function ProjectsPage() {
                     : filter.value === 'INVEST'
                     ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/30'
                     : 'bg-white text-zinc-900'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10'
+                  : 'bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-800 border border-gray-200'
               }`}
             >
               {filter.label}
             </button>
           ))}
-          <span className="ml-auto text-sm text-gray-500">
+          <span className="ml-auto text-sm text-gray-400">
             {filteredProjects.length} propert{filteredProjects.length === 1 ? 'y' : 'ies'}
           </span>
         </motion.div>
@@ -130,7 +130,7 @@ export function ProjectsPage() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-center py-24 text-gray-500"
+            className="text-center py-24 text-gray-400"
           >
             No {activeFilter.toLowerCase()} properties found in this region.
           </motion.div>

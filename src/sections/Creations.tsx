@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { BlueprintGrid, ParticleField } from '@/components/backgrounds';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface SubRegion {
   name: string;
@@ -246,16 +247,16 @@ export function Creations() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-16 text-center"
           >
-            <motion.a
-              href="#"
-              onClick={(e) => e.preventDefault()}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 px-8 py-4 border border-brand-500/50 text-brand-500 font-medium rounded-full hover:bg-brand-500 hover:text-white transition-all duration-300"
-            >
-              View All Projects
-              <ArrowRight className="w-5 h-5" />
-            </motion.a>
+            <Link to="/portfolio">
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-3 px-8 py-4 border border-brand-500/50 text-brand-500 font-medium rounded-full hover:bg-brand-500 hover:text-white transition-all duration-300 cursor-pointer"
+              >
+                View All Projects
+                <ArrowRight className="w-5 h-5" />
+              </motion.span>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { ContinentCard } from '@/components/portfolio/ContinentCard';
 
 export function ContinentsPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 px-6 lg:px-16">
+    <div className="min-h-screen bg-white text-gray-900 pt-28 pb-20 px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Back link */}
         <motion.div
@@ -17,7 +17,7 @@ export function ContinentsPage() {
         >
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-900 transition-colors"
           >
             <ArrowLeft size={16} />
             Back to Home
@@ -34,13 +34,13 @@ export function ContinentsPage() {
           <p className="text-brand-400 text-sm font-semibold uppercase tracking-widest mb-4">
             Global Portfolio
           </p>
-          <h1 className="text-5xl lg:text-7xl font-display font-bold mb-6">
+          <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 mb-6">
             Choose Your{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">
               Continent
             </span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl">
+          <p className="text-xl text-gray-500 max-w-2xl">
             ELEV8's portfolio spans the globe. Select a region that speaks to your ambition.
           </p>
         </motion.div>
