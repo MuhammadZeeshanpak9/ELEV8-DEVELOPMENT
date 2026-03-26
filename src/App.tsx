@@ -1,18 +1,12 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Header } from '@/components/Header';
-import {
-  Hero,
-  Story,
-  Mission,
-  Vision,
-  Creations,
-  Philosophy,
-  Actions,
-  Contact,
-  Footer
-} from '@/sections';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from '@/pages/Home';
+import { ContinentsPage } from '@/pages/portfolio/ContinentsPage';
+import { RegionsPage } from '@/pages/portfolio/RegionsPage';
+import { ProjectsPage } from '@/pages/portfolio/ProjectsPage';
+import { ProjectDetails } from '@/pages/portfolio/ProjectDetails';
 import './App.css';
 
 // Register GSAP plugins
@@ -22,36 +16,10 @@ function App() {
   useEffect(() => {
     // Smooth scroll behavior
     document.documentElement.style.scrollBehavior = 'smooth';
-
-    // Initialize ScrollTrigger refresh on load
-    ScrollTrigger.refresh();
-
-    // Cleanup
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    };
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white text-gray-900 overflow-x-hidden">
-      {/* Header */}
-      <Header />
-
-      {/* Main Content */}
-      <main>
-        <Hero />
-        <Story />
-        <Mission />
-        <Vision />
-        <Creations />
-        <Philosophy />
-        <Actions />
-        <Contact />
-      </main>
-
-      {/* Footer */}
-      <Footer />
-
+    <BrowserRouter>
       {/* Global Background Noise */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.008]">
         <svg className="w-full h-full">
@@ -66,7 +34,15 @@ function App() {
           <rect width="100%" height="100%" filter="url(#noise)" />
         </svg>
       </div>
-    </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<ContinentsPage />} />
+        <Route path="/portfolio/:continent" element={<RegionsPage />} />
+        <Route path="/portfolio/:continent/:region" element={<ProjectsPage />} />
+        <Route path="/portfolio/project/:projectId" element={<ProjectDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,156 @@
+import { motion } from 'framer-motion';
+import { Link, useParams, Navigate } from 'react-router-dom';
+import { ArrowLeft, MapPin, Tag, BarChart3 } from 'lucide-react';
+import { projectsData, regionsData, continentsData } from '@/data/portfolio';
+
+export function ProjectDetails() {
+  const { projectId } = useParams<{ projectId: string }>();
+
+  const project = projectsData.find((p) => p.id === projectId);
+
+  if (!project) {
+    return <Navigate to="/portfolio" replace />;
+  }
+
+  const region = regionsData.find((r) => r.id === project.regionId);
+  const continent = continentsData.find((c) => c.id === project.continentId);
+
+  const getTypeColor = (type: string) => {
+    switch (type) {
+      case 'RENT':
+        return 'bg-blue-500/20 text-blue-300 border-blue-400/30';
+      case 'BUY':
+        return 'bg-emerald-500/20 text-emerald-300 border-emerald-400/30';
+      case 'INVEST':
+        return 'bg-purple-500/20 text-purple-300 border-purple-400/30';
+      default:
+        return 'bg-zinc-500/20 text-zinc-300 border-zinc-400/30';
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20">
+      {/* Hero Image */}
+      <div className="relative h-[50vh] mb-16 px-6 lg:px-16">
+        <div className="max-w-7xl mx-auto h-full">
+          {/* Back link */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            className="absolute top-0 left-6 lg:left-16 z-10"
+          >
+            {region && continent && (
+              <Link
+                to={`/portfolio/${project.continentId}/${project.regionId}`}
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <ArrowLeft size={16} />
+                {region.name}
+              </Link>
+            )}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="h-full rounded-3xl overflow-hidden relative"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="px-6 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Left: Main Info */}
+            <div className="lg:col-span-2">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <span
+                  className={`inline-block px-4 py-1.5 text-xs font-bold rounded-full border mb-5 ${getTypeColor(project.type)}`}
+                >
+                  {project.type}
+                </span>
+                <h1 className="text-4xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+                  {project.title}
+                </h1>
+                <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                  {project.description}
+                </p>
+
+                {/* Details */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                    <MapPin size={20} className="text-brand-400 mt-0.5 shrink-0" />
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Location</p>
+                      <p className="text-sm text-white font-medium">
+                        {region?.name}, {continent?.name}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                    <Tag size={20} className="text-brand-400 mt-0.5 shrink-0" />
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Price</p>
+                      <p className="text-sm text-white font-medium">{project.price}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/8">
+                    <BarChart3 size={20} className="text-brand-400 mt-0.5 shrink-0" />
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Details</p>
+                      <p className="text-sm text-white font-medium">{project.stats}</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Right: CTA Panel */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+              className="bg-white/5 rounded-2xl border border-white/10 p-8 h-fit sticky top-28"
+            >
+              <p className="text-brand-400 text-sm font-semibold uppercase tracking-widest mb-2">
+                Interested?
+              </p>
+              <h3 className="text-2xl font-display font-bold text-white mb-3">
+                Get in Touch
+              </h3>
+              <p className="text-gray-400 text-sm mb-8">
+                Our team is ready to provide you with all the details about this property and guide you through the next steps.
+              </p>
+              <Link
+                to="/#contact"
+                className="block w-full text-center py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold transition-colors duration-300"
+              >
+                Enquire Now
+              </Link>
+              <Link
+                to="/portfolio"
+                className="block w-full text-center py-3 rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-white/20 text-sm mt-3 transition-colors duration-300"
+              >
+                Browse More Properties
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
