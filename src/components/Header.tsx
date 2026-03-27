@@ -10,7 +10,7 @@ const hashLinks = [
   { label: 'Mission', href: '#mission', icon: Target },
   { label: 'Vision', href: '#vision', icon: Eye },
   { label: 'Creations', href: '#creations', icon: Gem },
-  { label: 'Philosophy', href: '#philosophy', icon: Compass },
+  { label: 'Portfolio', href: '#philosophy', icon: Compass },
   { label: 'Invest', href: '#actions', icon: TrendingUp },
   { label: 'Contact', href: '#contact', icon: Send },
 ];
@@ -109,7 +109,7 @@ export function Header() {
                   }`}
                 >
                   <Globe size={14} />
-                  Portfolio
+                  Philosophy
                   <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-px bg-brand-500 transition-all duration-300 ${isPortfolioPage ? 'w-3/4' : 'w-0 group-hover:w-3/4'}`} />
                 </Link>
               </motion.div>
@@ -188,7 +188,7 @@ export function Header() {
                     className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300"
                   >
                     <Globe size={18} strokeWidth={1.5} className="opacity-70" />
-                    <span className="font-medium tracking-wide">Portfolio</span>
+                    <span className="font-medium tracking-wide">Philosophy</span>
                   </Link>
                 </motion.div>
 
