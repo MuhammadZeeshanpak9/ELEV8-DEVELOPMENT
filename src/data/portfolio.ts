@@ -91,6 +91,13 @@ export const regionsData: Region[] = [
     continentId: 'asia'
   },
   {
+    id: 'thailand',
+    name: 'Thailand',
+    image: '/PORTFOLIO/thailand-6m/1000086984.jpg',
+    description: 'Exquisite villas in Phuket and Koh Samui, and modern stays in Bangkok.',
+    continentId: 'asia'
+  },
+  {
     id: 'uae',
     name: 'United Arab Emirates',
     image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200',
@@ -108,9 +115,9 @@ export const regionsData: Region[] = [
   // Africa
   {
     id: 'africa-east',
-    name: 'East Africa',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
-    description: 'Ultra-luxury safari lodges and glass villas across Kenya, Tanzania and beyond.',
+    name: 'East Africa (Tanzania)',
+    image: '/PORTFOLIO/africa-tanzania/1000086976.jpg',
+    description: 'Ultra-luxury safari lodges and glass villas across the breathtaking landscapes of Tanzania.',
     continentId: 'africa'
   },
   {
@@ -166,75 +173,35 @@ export const regionsData: Region[] = [
   // North America
   {
     id: 'na-miami',
-    name: 'Miami',
-    image: 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80&w=1200',
+    name: 'Miami Florida',
+    image: '/PORTFOLIO/na-miami/1000086972.jpg',
     description: 'Glass waterfront penthouses and modern mansions on Miami\'s most exclusive islands.',
     continentId: 'north-america'
   },
   {
     id: 'na-la',
-    name: 'Los Angeles',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=1200',
-    description: 'Hollywood Hills contemporary estates with infinity pools and canyon views.',
+    name: 'L.A. California',
+    image: '/PORTFOLIO/na-la-14m/1000086967.jpg',
+    description: 'Ultra-modern glass estates and sprawling compounds in Los Angeles\' most exclusive neighborhoods.',
     continentId: 'north-america'
   },
+
   {
-    id: 'na-new-york',
-    name: 'New York',
-    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=1200',
-    description: 'Sky-high luxury condos and full-floor penthouses in Manhattan\'s iconic skyline.',
+    id: 'na-orlando',
+    name: 'Orlando Florida',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085825.jpg',
+    description: 'Expansive private estates and golf club luxury residences in Orlando.',
     continentId: 'north-america'
-  }
+  },
 ];
 
 export const projectsData: Project[] = [
   // UK
-  {
-    id: 'london-penthouse',
-    title: 'The Skyline Penthouse',
-    type: 'BUY',
-    price: '£12,500,000',
-    stats: '4 Bed • 5 Bath • 4,500 sqft',
-    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=1200',
-    description: 'A breathtaking penthouse in central London featuring panoramic city views.',
-    regionId: 'uk',
-    continentId: 'europe'
-  },
-  {
-    id: 'london-apartment',
-    title: 'Mayfair Boutique Apartment',
-    type: 'RENT',
-    price: '£15,000 / month',
-    stats: '2 Bed • 2 Bath • 1,800 sqft',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200',
-    description: 'An exquisitely furnished apartment in the heart of Mayfair, ready for immediate move-in.',
-    regionId: 'uk',
-    continentId: 'europe'
-  },
-  // France
-  {
-    id: 'riviera-villa',
-    title: 'Villa Azure',
-    type: 'BUY',
-    price: '€18,000,000',
-    stats: '6 Bed • 7 Bath • 8,200 sqft',
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1200',
-    description: 'Extravagant waterfront villa on the French Riviera with private dock.',
-    regionId: 'france',
-    continentId: 'europe'
-  },
+
+// France
+
   // Indonesia (Bali)
-  {
-    id: 'bali-jungle-retreat',
-    title: 'Ubud Serenity Retreat',
-    type: 'INVEST',
-    price: '$2,500,000',
-    stats: '15% Projected ROI',
-    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&q=80&w=1200',
-    description: 'A high-yield investment opportunity in an eco-luxury jungle resort in Bali.',
-    regionId: 'indonesia',
-    continentId: 'asia'
-  },
+
   {
     id: 'bali-beach-villa',
     title: 'Uluwatu Cliff Villa',
@@ -258,112 +225,237 @@ export const projectsData: Project[] = [
     regionId: 'uae',
     continentId: 'asia'
   },
-  // Mexico (Tulum)
+  // Thailand
   {
-    id: 'tulum-eco-residences',
-    title: 'Sian Ka\'an Eco Residences',
-    type: 'INVEST',
-    price: '$4,200,000',
-    stats: 'Developer Equity • 20% ROI target',
-    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=1200',
-    description: 'Invest in the next generation of sustainable luxury living in the heart of Tulum.',
-    regionId: 'mexico',
-    continentId: 'americas'
+    id: 'th-rent-1',
+    title: 'Thailand Luxury Retreat I',
+    type: 'RENT',
+    price: '$45k / month',
+    stats: '5 Bed • 6 Bath • Full Service',
+    image: '/PORTFOLIO/thailand-6m/1000086981.jpg',
+    description: 'Bespoke luxury living in a fully serviced villa with breathtaking views.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-rent-2',
+    title: 'Thailand Luxury Retreat II',
+    type: 'RENT',
+    price: '$45k / month',
+    stats: '4 Bed • 5 Bath • Infinity Pool',
+    image: '/PORTFOLIO/thailand-6m/1000086982.jpg',
+    description: 'Modern rental with floor-to-ceiling glass and panoramic sea views.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-rent-3',
+    title: 'Thailand Luxury Retreat III',
+    type: 'RENT',
+    price: '$45k / month',
+    stats: '5 Bed • 5 Bath • Direct Beach Access',
+    image: '/PORTFOLIO/thailand-6m/1000086983.jpg',
+    description: 'Premium beachfront living with all the comforts of a five-star resort.',
+    regionId: 'thailand',
+    continentId: 'asia'
   },
 
-  // ─── AFRICA ───────────────────────────────────────────────────────────────
-  // East Africa
   {
-    id: 'ke-nairobi-penthouse',
-    title: 'Nairobi Sky Penthouse',
+    id: 'th-buy-2',
+    title: 'Thailand Modern Estate II',
     type: 'BUY',
-    price: '$4,800,000',
-    stats: '4 Bed • 4 Bath • 5,200 sqft',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A full-floor glass penthouse above Nairobi\'s skyline with wrap-around terrace and infinity pool.',
-    regionId: 'africa-east',
-    continentId: 'africa'
+    price: '$9,000,000',
+    stats: '5 Bed • 6 Bath • 7,500 sqft',
+    image: '/PORTFOLIO/thailand-6m/1000086985.jpg',
+    description: 'Contemporary villa designed for the most discerning luxury buyers.',
+    regionId: 'thailand',
+    continentId: 'asia'
   },
   {
-    id: 'ke-karen-villa',
-    title: 'Karen Heights Glass Villa',
+    id: 'th-buy-3',
+    title: 'Thailand Modern Estate III',
     type: 'BUY',
-    price: '$3,200,000',
-    stats: '5 Bed • 5 Bath • 7,000 sqft',
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200',
-    description: 'An architect-designed glass and concrete villa set in 2 acres of landscaped gardens in Karen.',
-    regionId: 'africa-east',
-    continentId: 'africa'
+    price: '$9,000,000',
+    stats: '7 Bed • 8 Bath • Designer Finishes',
+    image: '/PORTFOLIO/thailand-6m/1000086986.jpg',
+    description: 'Exclusive estate offering unparalleled privacy and sophistication.',
+    regionId: 'thailand',
+    continentId: 'asia'
   },
   {
-    id: 'ke-mombasa-villa',
-    title: 'Diani Beachfront Villa',
-    type: 'RENT',
-    price: '$12,000 / month',
-    stats: '4 Bed • 4 Bath • Direct Beach Access',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
-    description: 'A stunning contemporary villa on Diani Beach, Kenya, with open-plan glass architecture.',
-    regionId: 'africa-east',
-    continentId: 'africa'
-  },
-  {
-    id: 'tz-zanzibar-resort',
-    title: 'Zanzibar Luxury Retreat',
+    id: 'th-invest-1',
+    title: 'Thailand Investment Opportunity I',
     type: 'INVEST',
-    price: '$6,500,000',
-    stats: '18% Projected ROI • Boutique Resort',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200',
-    description: 'A 12-villa ultra-luxury resort development on Zanzibar\'s north coast, open for investment.',
-    regionId: 'africa-east',
-    continentId: 'africa'
+    price: 'Contact for Pricing',
+    stats: 'High Yield • Strategic Location',
+    image: '/PORTFOLIO/thailand-6m/1000086987.jpg',
+    description: 'Prime investment opportunity in a developing luxury resort market.',
+    regionId: 'thailand',
+    continentId: 'asia'
   },
   {
-    id: 'tz-arusha-lodge',
-    title: 'Arusha Eco Glass Lodge',
-    type: 'BUY',
-    price: '$2,900,000',
-    stats: '8 Suites • Mountain View • 4,500 sqft',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200',
-    description: 'A modern glass lodge with panoramic Kilimanjaro views, designed by a Pritzker award winner.',
-    regionId: 'africa-east',
-    continentId: 'africa'
+    id: 'th-invest-2',
+    title: 'Thailand Investment Opportunity II',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Developer Equity • 18% Target ROI',
+    image: '/PORTFOLIO/thailand-6m/1000086988.jpg',
+    description: 'Join a high-performing luxury residential fund in one of Thailand\'s top locations.',
+    regionId: 'thailand',
+    continentId: 'asia'
   },
   {
-    id: 'et-addis-penthouse',
-    title: 'Addis Ababa Sky Suite',
+    id: 'th-invest-3',
+    title: 'Thailand Investment Opportunity III',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Pre-Launch • Premium Branded',
+    image: '/PORTFOLIO/thailand-6m/1000086989.jpg',
+    description: 'Early-stage investment in a branded residence project by an award-winning developer.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-rent-1',
+    title: 'Phuket Signature Villa I',
     type: 'RENT',
-    price: '$7,500 / month',
-    stats: '3 Bed • 3 Bath • 3,200 sqft',
-    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=1200',
-    description: 'A fully-furnished luxury suite on the 38th floor of Addis Ababa\'s premier tower.',
+    price: '$75k / month',
+    stats: '6 Bed • 7 Bath • Oceanfront',
+    image: '/PORTFOLIO/thailand-15m/1000086953.jpg',
+    description: 'Ultra-luxury palatial villa with resort-style amenities and panoramic ocean views.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-rent-2',
+    title: 'Phuket Signature Villa II',
+    type: 'RENT',
+    price: '$75k / month',
+    stats: '5 Bed • 6 Bath • Private Chef',
+    image: '/PORTFOLIO/thailand-15m/1000086954.jpg',
+    description: 'Exclusive clifftop retreat featuring an infinity pool and dedicated staff.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-rent-3',
+    title: 'Phuket Signature Villa III',
+    type: 'RENT',
+    price: '$75k / month',
+    stats: '7 Bed • 8 Bath • Beach Access',
+    image: '/PORTFOLIO/thailand-15m/1000086955.jpg',
+    description: 'Sprawling estate offering direct beach access and uncompromised privacy.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-buy-1',
+    title: 'Thailand Super Prime Estate I',
+    type: 'BUY',
+    price: '$15,000,000',
+    stats: '8 Bed • 9 Bath • 12,000 sqft',
+    image: '/PORTFOLIO/thailand-15m/1000086956.jpg',
+    description: 'A masterpiece of contemporary Thai architecture designed for the global elite.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-buy-2',
+    title: 'Thailand Super Prime Estate II',
+    type: 'BUY',
+    price: '$15,000,000',
+    stats: '6 Bed • 7 Bath • Heli-pad',
+    image: '/PORTFOLIO/thailand-15m/1000086957.jpg',
+    description: 'Unrivaled luxury estate with helicopter access and private deep-water dock.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-buy-3',
+    title: 'Thailand Super Prime Estate III',
+    type: 'BUY',
+    price: '$15,000,000',
+    stats: '7 Bed • 8 Bath • Spa & Gym',
+    image: '/PORTFOLIO/thailand-15m/1000086958.jpg',
+    description: 'Trophy property featuring a private wellness center and multi-tiered pools.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-invest-1',
+    title: 'Phuket Resort Development I',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High Yield',
+    image: '/PORTFOLIO/thailand-15m/1000086959.jpg',
+    description: 'Rare opportunity to co-invest in a landmark ultra-luxury branded resort.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'th-15m-invest-2',
+    title: 'Phuket Resort Development II',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Pre-Construction • Tier 1 Location',
+    image: '/PORTFOLIO/thailand-15m/1000086960.jpg',
+    description: 'Early-stage equity investment in Thailand\'s most anticipated ultra-prime development.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  // Mexico (Tulum)
+
+// ─── AFRICA ───────────────────────────────────────────────────────────────
+  // East Africa (Tanzania)
+
+  {
+    id: 'tz-rent-2',
+    title: 'Zanzibar Oceanfront Retreat',
+    type: 'RENT',
+    price: '$15k / month',
+    stats: '5 Bed • 6 Bath • Private Beach',
+    image: '/PORTFOLIO/africa-tanzania/1000086977.jpg',
+    description: 'Ultra-luxury contemporary villa on the pristine white sands of Zanzibar.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'tz-buy-1',
+    title: 'Ngorongoro Reserve Estate',
+    type: 'BUY',
+    price: '$3,000,000',
+    stats: '6 Bed • 7 Bath • Off-Grid Luxury',
+    image: '/PORTFOLIO/africa-tanzania/1000086978.jpg',
+    description: 'An architectural masterpiece blending perfectly into the dramatic crater landscape.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'tz-buy-2',
+    title: 'Dar es Salaam Modern Penthouse',
+    type: 'BUY',
+    price: '$3,000,000',
+    stats: '4 Bed • 5 Bath • Indian Ocean Views',
+    image: '/PORTFOLIO/africa-tanzania/1000086979.jpg',
+    description: 'A striking penthouse soaring above Dar es Salaam with an expansive private terrace.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'tz-invest-1',
+    title: 'Tanzania Luxury Eco-Resort',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • 18% ROI Target',
+    image: '/PORTFOLIO/africa-tanzania/1000086980.jpg',
+    description: 'Co-invest in the premier sustainable luxury resort currently under development in Tanzania.',
     regionId: 'africa-east',
     continentId: 'africa'
   },
 
   // South Africa
-  {
-    id: 'sa-clifton-villa',
-    title: 'Clifton Clifftop Mansion',
-    type: 'BUY',
-    price: 'R 185,000,000',
-    stats: '6 Bed • 7 Bath • Panoramic Ocean Views',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1200',
-    description: 'A world-class glass and steel mansion perched over Clifton\'s First Beach, Cape Town.',
-    regionId: 'africa-south',
-    continentId: 'africa'
-  },
-  {
-    id: 'sa-camps-bay',
-    title: 'Camps Bay Glass Residence',
-    type: 'RENT',
-    price: 'R 280,000 / month',
-    stats: '4 Bed • 4 Bath • Private Pool',
-    image: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=1200',
-    description: 'Sleek modernist villa in Camps Bay with floor-to-ceiling glass walls and Atlantic views.',
-    regionId: 'africa-south',
-    continentId: 'africa'
-  },
-  {
+
+{
     id: 'sa-franschhoek-estate',
     title: 'Franschhoek Wine Estate',
     type: 'BUY',
@@ -374,29 +466,8 @@ export const projectsData: Project[] = [
     regionId: 'africa-south',
     continentId: 'africa'
   },
-  {
-    id: 'sa-sandton-penthouse',
-    title: 'Sandton Apex Penthouse',
-    type: 'BUY',
-    price: 'R 42,000,000',
-    stats: '3 Bed • 3 Bath • 3,800 sqft',
-    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=1200',
-    description: 'The crown jewel of Sandton\'s premier tower — a duplex penthouse with panoramic Joburg views.',
-    regionId: 'africa-south',
-    continentId: 'africa'
-  },
-  {
-    id: 'sa-v-and-a',
-    title: 'V&A Waterfront Apartment',
-    type: 'RENT',
-    price: 'R 95,000 / month',
-    stats: '2 Bed • 2 Bath • Marina View',
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200',
-    description: 'Contemporary apartment in the iconic V&A Waterfront with direct marina access.',
-    regionId: 'africa-south',
-    continentId: 'africa'
-  },
-  {
+
+{
     id: 'sa-invest-precinct',
     title: 'Cape Town Luxury Precinct Fund',
     type: 'INVEST',
@@ -442,17 +513,7 @@ export const projectsData: Project[] = [
     regionId: 'africa-north',
     continentId: 'africa'
   },
-  {
-    id: 'tn-tunis-villa',
-    title: 'Sidi Bou Saïd Glass Villa',
-    type: 'BUY',
-    price: '€2,800,000',
-    stats: '4 Bed • 4 Bath • Sea Views',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1200',
-    description: 'A stunning glass villa in the clifftop village of Sidi Bou Saïd, overlooking the Mediterranean.',
-    regionId: 'africa-north',
-    continentId: 'africa'
-  },
+
   {
     id: 'ma-atlas-lodge',
     title: 'Atlas Mountain Retreat',
@@ -464,75 +525,10 @@ export const projectsData: Project[] = [
     regionId: 'africa-north',
     continentId: 'africa'
   },
-  {
-    id: 'eg-gouna-villa',
-    title: 'El Gouna Lagoon Villa',
-    type: 'RENT',
-    price: '$6,500 / month',
-    stats: '3 Bed • 3 Bath • Lagoon Access',
-    image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200',
-    description: 'Contemporary villa with private lagoon mooring in the luxury Red Sea resort town of El Gouna.',
-    regionId: 'africa-north',
-    continentId: 'africa'
-  },
 
-  // West Africa
-  {
-    id: 'ng-lagos-penthouse',
-    title: 'Lagos Oceanview Penthouse',
-    type: 'BUY',
-    price: '₦2,500,000,000',
-    stats: '4 Bed • 5 Bath • 5,000 sqft',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A statement penthouse atop Lagos Island\'s tallest tower with floor-to-ceiling glass and ocean views.',
-    regionId: 'africa-west',
-    continentId: 'africa'
-  },
-  {
-    id: 'gh-accra-villa',
-    title: 'Accra Cantonments Villa',
-    type: 'BUY',
-    price: '$1,800,000',
-    stats: '5 Bed • 5 Bath • Private Pool',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'A glass-fronted contemporary villa in Cantonments, Accra\'s most prestigious residential enclave.',
-    regionId: 'africa-west',
-    continentId: 'africa'
-  },
-  {
-    id: 'ng-lagos-invest',
-    title: 'Eko Atlantic Residences',
-    type: 'INVEST',
-    price: '$8,000,000',
-    stats: '20% ROI Target • Pre-Launch',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200',
-    description: 'Early-stage investment in Eko Atlantic\'s premium branded residences — Africa\'s most ambitious urban project.',
-    regionId: 'africa-west',
-    continentId: 'africa'
-  },
-  {
-    id: 'sn-dakar-apartment',
-    title: 'Dakar Corniche Apartment',
-    type: 'RENT',
-    price: '$4,000 / month',
-    stats: '2 Bed • 2 Bath • Ocean Views',
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1200',
-    description: 'A sleek modern apartment along Dakar\'s scenic Corniche with sweeping Atlantic views.',
-    regionId: 'africa-west',
-    continentId: 'africa'
-  },
-  {
-    id: 'ci-abidjan-penthouse',
-    title: 'Abidjan Plateau Penthouse',
-    type: 'BUY',
-    price: 'XOF 3,500,000,000',
-    stats: '3 Bed • 3 Bath • Lagune Views',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A cutting-edge penthouse in Abidjan\'s business district with panoramic lagune views.',
-    regionId: 'africa-west',
-    continentId: 'africa'
-  },
-  {
+// West Africa
+
+{
     id: 'gh-accra-invest',
     title: 'Airport Hills Luxury Towers',
     type: 'INVEST',
@@ -545,40 +541,8 @@ export const projectsData: Project[] = [
   },
 
   // Central Africa
-  {
-    id: 'rw-kigali-villa',
-    title: 'Kigali Hilltop Glass Villa',
-    type: 'BUY',
-    price: '$2,200,000',
-    stats: '4 Bed • 4 Bath • Valley Views',
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200',
-    description: 'An award-winning glass and timber villa on Kigali\'s most exclusive ridge with valley panoramas.',
-    regionId: 'africa-central',
-    continentId: 'africa'
-  },
-  {
-    id: 'rw-akagera-lodge',
-    title: 'Akagera Eco-Luxury Lodge',
-    type: 'INVEST',
-    price: '$4,500,000',
-    stats: '17% ROI • Safari & Wellness',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200',
-    description: 'Invest in Rwanda\'s highest-rated eco-luxury lodge on the shores of Lake Ihema.',
-    regionId: 'africa-central',
-    continentId: 'africa'
-  },
-  {
-    id: 'cm-yaounde-penthouse',
-    title: 'Yaoundé Sky Residence',
-    type: 'BUY',
-    price: 'XAF 1,200,000,000',
-    stats: '3 Bed • 3 Bath • City Views',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A modern penthouse in Yaoundé\'s premier high-rise with 270° views over the capital.',
-    regionId: 'africa-central',
-    continentId: 'africa'
-  },
-  {
+
+{
     id: 'rw-kigali-rent',
     title: 'Kigali Kimihurura Apartment',
     type: 'RENT',
@@ -589,223 +553,15 @@ export const projectsData: Project[] = [
     regionId: 'africa-central',
     continentId: 'africa'
   },
-  {
-    id: 'ga-libreville-villa',
-    title: 'Libreville Oceanfront Villa',
-    type: 'BUY',
-    price: '$1,900,000',
-    stats: '4 Bed • 3 Bath • Private Pool',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'A minimalist oceanfront villa in Libreville with glass living spaces opening to the Atlantic.',
-    regionId: 'africa-central',
-    continentId: 'africa'
-  },
-  {
-    id: 'cd-kinshasa-invest',
-    title: 'Kinshasa Prestige Tower',
-    type: 'INVEST',
-    price: '$5,000,000',
-    stats: '15% ROI • Commercial & Residential',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200',
-    description: 'First-mover investment opportunity in Kinshasa\'s upcoming mixed-use luxury tower.',
-    regionId: 'africa-central',
-    continentId: 'africa'
-  },
 
-  // ─── AUSTRALIA ────────────────────────────────────────────────────────────
+// ─── AUSTRALIA ────────────────────────────────────────────────────────────
   // Sydney
-  {
-    id: 'au-syd-harbour-penthouse',
-    title: 'Sydney Harbour Glass Penthouse',
-    type: 'BUY',
-    price: 'AUD 18,500,000',
-    stats: '4 Bed • 4 Bath • 360° Harbour Views',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
-    description: 'A spectacular full-floor penthouse above Kirribilli with uninterrupted views of the Sydney Opera House and Harbour Bridge.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-syd-mosman-villa',
-    title: 'Mosman Cliffside Villa',
-    type: 'BUY',
-    price: 'AUD 12,000,000',
-    stats: '5 Bed • 5 Bath • Private Jetty',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=1200',
-    description: 'An architecturally designed glass villa on Mosman Bay with a private jetty and ocean pool.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-syd-bondi-apartment',
-    title: 'Bondi Beachfront Apartment',
-    type: 'RENT',
-    price: 'AUD 18,000 / month',
-    stats: '3 Bed • 2 Bath • Direct Beach Views',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'A contemporary beachfront apartment at Bondi with full-length glass facades and ocean terraces.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-syd-darling-penthouse',
-    title: 'Darling Point Penthouse',
-    type: 'BUY',
-    price: 'AUD 22,000,000',
-    stats: '5 Bed • 5 Bath • Private Rooftop Pool',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'One of Sydney\'s finest full-floor penthouses in the prestigious Darling Point enclave.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-syd-barangaroo',
-    title: 'Barangaroo Crown Residence',
-    type: 'RENT',
-    price: 'AUD 25,000 / month',
-    stats: '3 Bed • 3 Bath • Harbour View',
-    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=1200',
-    description: 'A hotel-branded super-prime apartment in the iconic Crown Residences at Barangaroo.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-syd-invest-precinct',
-    title: 'Sydney Waterfront REIT',
-    type: 'INVEST',
-    price: 'AUD 5,000,000',
-    stats: '11% ROI • Managed Fund',
-    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=1200',
-    description: 'Join Australia\'s highest-performing waterfront luxury residential fund with quarterly distributions.',
-    regionId: 'australia-sydney',
-    continentId: 'australia'
-  },
 
-  // Melbourne
-  {
-    id: 'au-mel-toorak-mansion',
-    title: 'Toorak Contemporary Mansion',
-    type: 'BUY',
-    price: 'AUD 14,500,000',
-    stats: '6 Bed • 6 Bath • Tennis Court',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1200',
-    description: 'A statement glass-and-concrete mansion in Toorak — Melbourne\'s most exclusive street address.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-mel-southbank-penthouse',
-    title: 'Southbank Sky Penthouse',
-    type: 'BUY',
-    price: 'AUD 9,800,000',
-    stats: '4 Bed • 4 Bath • Yarra River Views',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A breathtaking penthouse above Southbank with panoramic views of the Yarra River and CBD.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-mel-brighton-villa',
-    title: 'Brighton Beachside Villa',
-    type: 'BUY',
-    price: 'AUD 7,200,000',
-    stats: '4 Bed • 3 Bath • Pool & Beach',
-    image: 'https://images.unsplash.com/photo-1564501049559-0738c2c20c0b?auto=format&fit=crop&q=80&w=1200',
-    description: 'A modernist glass villa steps from Brighton\'s famous bathing boxes and Port Phillip Bay.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-mel-cbd-rent',
-    title: 'Collins Street Sky Apartment',
-    type: 'RENT',
-    price: 'AUD 12,000 / month',
-    stats: '2 Bed • 2 Bath • CBD Skyline Views',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
-    description: 'Ultra-modern furnished apartment on prestigious Collins Street with soaring city views.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-mel-docklands',
-    title: 'Docklands Marina Residence',
-    type: 'RENT',
-    price: 'AUD 9,500 / month',
-    stats: '2 Bed • 2 Bath • Marina Views',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200',
-    description: 'A sleek contemporary apartment in Melbourne Docklands with direct marina and bay views.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-mel-invest',
-    title: 'Melbourne Luxury Tower Fund',
-    type: 'INVEST',
-    price: 'AUD 3,500,000',
-    stats: '13% ROI • Premium Residential',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200',
-    description: 'Invest in Melbourne\'s next landmark luxury tower — pre-launch units with guaranteed yield.',
-    regionId: 'australia-melbourne',
-    continentId: 'australia'
-  },
+// Melbourne
 
-  // Gold Coast
-  {
-    id: 'au-gc-surfers-penthouse',
-    title: 'Surfers Paradise Sky Penthouse',
-    type: 'BUY',
-    price: 'AUD 11,000,000',
-    stats: '4 Bed • 4 Bath • Ocean & Canal Views',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
-    description: 'A triple-aspect penthouse crowning the Gold Coast\'s tallest residential tower with 270° ocean views.',
-    regionId: 'australia-gold-coast',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-gc-broadbeach-villa',
-    title: 'Broadbeach Beachfront Villa',
-    type: 'BUY',
-    price: 'AUD 8,500,000',
-    stats: '5 Bed • 5 Bath • Absolute Beachfront',
-    image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200',
-    description: 'An ultra-modern glass villa directly on Broadbeach with a rooftop pool and private beach access.',
-    regionId: 'australia-gold-coast',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-gc-hope-island',
-    title: 'Hope Island Waterfront Estate',
-    type: 'BUY',
-    price: 'AUD 6,800,000',
-    stats: '5 Bed • 5 Bath • Private Pontoon',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'A stunning canal-front estate in Hope Island with a private pontoon, pool and glass pavilion.',
-    regionId: 'australia-gold-coast',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-gc-main-beach-rent',
-    title: 'Main Beach Luxury Apartment',
-    type: 'RENT',
-    price: 'AUD 8,000 / month',
-    stats: '3 Bed • 2 Bath • Beachfront Complex',
-    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&q=80&w=1200',
-    description: 'A premium top-floor apartment in Main Beach\'s finest boutique complex with pool and gym.',
-    regionId: 'australia-gold-coast',
-    continentId: 'australia'
-  },
-  {
-    id: 'au-gc-sanctuary-cove',
-    title: 'Sanctuary Cove Retreat',
-    type: 'RENT',
-    price: 'AUD 10,500 / month',
-    stats: '4 Bed • 3 Bath • Golf Course Views',
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=1200',
-    description: 'A beautifully appointed villa inside the prestigious Sanctuary Cove gated community.',
-    regionId: 'australia-gold-coast',
-    continentId: 'australia'
-  },
-  {
+// Gold Coast
+
+{
     id: 'au-gc-invest',
     title: 'Gold Coast Resort Investment',
     type: 'INVEST',
@@ -818,207 +574,1715 @@ export const projectsData: Project[] = [
   },
 
   // ─── NORTH AMERICA ────────────────────────────────────────────────────────
-  // Miami
+  // Miami Florida
+
   {
-    id: 'na-miami-brickell',
+    id: 'na-miami-buy-1',
+    title: 'Star Island Modern Estate',
+    type: 'BUY',
+    price: '$13,000,000',
+    stats: '6 Bed • 7 Bath • Private Dock',
+    image: '/PORTFOLIO/na-miami/1000086973.jpg',
+    description: 'Ultra-modern waterfront mansion on Miami\'s iconic Star Island.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-buy-2',
     title: 'Brickell Skyline Penthouse',
     type: 'BUY',
-    price: '$18,500,000',
-    stats: '5 Bed • 6 Bath • Full-Floor Private Pool',
-    image: 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&q=80&w=1200',
-    description: 'A landmark full-floor penthouse in Brickell\'s most prestigious tower with a private rooftop pool.',
+    price: '$13,000,000',
+    stats: '5 Bed • 6 Bath • Rooftop Pool',
+    image: '/PORTFOLIO/na-miami/1000086974.jpg',
+    description: 'A landmark full-floor penthouse in Brickell with sweeping panoramic views.',
     regionId: 'na-miami',
     continentId: 'north-america'
   },
   {
-    id: 'na-miami-starIsland',
-    title: 'Star Island Glass Mansion',
-    type: 'BUY',
-    price: '$45,000,000',
-    stats: '8 Bed • 9 Bath • Private Dock',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'An iconic ultra-modern mansion on Miami\'s most exclusive island with sweeping Biscayne Bay views.',
-    regionId: 'na-miami',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-miami-edgewater',
-    title: 'Edgewater Waterfront Condo',
-    type: 'RENT',
-    price: '$25,000 / month',
-    stats: '3 Bed • 3 Bath • Bay Views',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A furnished ultra-luxury condo in Edgewater with floor-to-ceiling glass and Biscayne Bay access.',
-    regionId: 'na-miami',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-miami-surfside',
-    title: 'Surfside Oceanfront Penthouse',
-    type: 'BUY',
-    price: '$22,000,000',
-    stats: '4 Bed • 5 Bath • Oceanfront',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=1200',
-    description: 'A direct oceanfront penthouse in the boutique Surfside Residences with private beach club.',
-    regionId: 'na-miami',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-miami-bal-harbour',
-    title: 'Bal Harbour Glass Villa',
-    type: 'RENT',
-    price: '$32,000 / month',
-    stats: '5 Bed • 5 Bath • Beach Access',
-    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=1200',
-    description: 'A bespoke glass villa in Bal Harbour with a private pool, ocean views and concierge service.',
-    regionId: 'na-miami',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-miami-invest',
-    title: 'Miami Ultra-Luxury Fund',
+    id: 'na-miami-invest-1',
+    title: 'Miami Ultra-Luxury Branded Fund',
     type: 'INVEST',
-    price: '$10,000,000',
-    stats: '16% ROI • Branded Residences',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200',
-    description: 'Invest in Miami\'s highest-performing branded residence portfolio across five trophy towers.',
+    price: 'Contact for Pricing',
+    stats: '15% ROI Target • Pre-Development',
+    image: '/PORTFOLIO/na-miami/1000086975.jpg',
+    description: 'Exclusive early access to co-invest in a high-end Miami Beach hotel residence.',
     regionId: 'na-miami',
     continentId: 'north-america'
   },
 
-  // Los Angeles
+  // L.A. California
+
   {
-    id: 'na-la-holmby-hills',
-    title: 'Holmby Hills Glass Estate',
-    type: 'BUY',
-    price: '$55,000,000',
-    stats: '8 Bed • 10 Bath • 2 Acres',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A breathtaking modernist estate in Holmby Hills with a resort-style pool and 270° canyon views.',
+    id: 'na-la-rent-2',
+    title: 'Hollywood Hills Minimalist Retreat',
+    type: 'RENT',
+    price: '$65k / month',
+    stats: '5 Bed • 6 Bath • Wraparound Terraces',
+    image: '/PORTFOLIO/na-la-14m/1000086968.jpg',
+    description: 'Ultra-luxurious minimalist retreat perched high in the Hollywood Hills featuring striking architectural elements.',
     regionId: 'na-la',
     continentId: 'north-america'
   },
   {
-    id: 'na-la-malibu-villa',
-    title: 'Malibu Oceanfront Villa',
+    id: 'na-la-buy-1',
+    title: 'L.A. Super Prime Glass Estate I',
     type: 'BUY',
-    price: '$38,000,000',
-    stats: '6 Bed • 7 Bath • Private Beach',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-    description: 'An architect-designed glass villa directly on Malibu\'s Carbon Beach, the most coveted stretch in California.',
+    price: '$14,000,000',
+    stats: '6 Bed • 7 Bath • Museum-quality Finishes',
+    image: '/PORTFOLIO/na-la-14m/1000086969.jpg',
+    description: 'Flawless contemporary design blending indoor and outdoor spaces effortlessly in this architectural triumph.',
     regionId: 'na-la',
     continentId: 'north-america'
   },
   {
-    id: 'na-la-bird-streets',
+    id: 'na-la-buy-2',
+    title: 'Beverly Hills Modern Classic',
+    type: 'BUY',
+    price: '$14,000,000',
+    stats: '7 Bed • 9 Bath • Private Cinema',
+    image: '/PORTFOLIO/na-la-14m/1000086970.jpg',
+    description: 'A completely reimagined modern compound offering the pinnacle of privacy in the heart of Beverly Hills 90210.',
+    regionId: 'na-la',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-la-invest-1',
+    title: 'L.A. Mansion Renovation Fund',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'High Yield • Value-Add',
+    image: '/PORTFOLIO/na-la-14m/1000086971.jpg',
+    description: 'Strategic deployment of capital into acquiring, remodeling, and flipping ultra-prime Los Angeles estates.',
+    regionId: 'na-la',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-la-rent-3',
+    title: 'Malibu Oceanfront Masterpiece',
+    type: 'RENT',
+    price: '$75k / month',
+    stats: '5 Bed • 6 Bath • Private Beach Access',
+    image: '/PORTFOLIO/na-la-15m/1000086961.jpg',
+    description: 'Iconic oceanfront living with floor-to-ceiling glass framing unobstructed Pacific Ocean views on Carbon Beach.',
+    regionId: 'na-la',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-la-rent-4',
     title: 'Bird Streets Contemporary Villa',
     type: 'RENT',
-    price: '$85,000 / month',
-    stats: '5 Bed • 6 Bath • Infinity Pool',
-    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=1200',
+    price: '$75k / month',
+    stats: '4 Bed • 5 Bath • Infinity Edge',
+    image: '/PORTFOLIO/na-la-15m/1000086962.jpg',
     description: 'A meticulously designed villa in the exclusive Bird Streets, with panoramic views over Los Angeles.',
     regionId: 'na-la',
     continentId: 'north-america'
   },
   {
-    id: 'na-la-bel-air',
-    title: 'Bel Air Glass Compound',
+    id: 'na-la-buy-3',
+    title: 'L.A. Super Prime Glass Estate II',
     type: 'BUY',
-    price: '$62,000,000',
-    stats: '7 Bed • 8 Bath • Guesthouse & Spa',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
-    description: 'An extraordinary glass-and-steel compound in Bel Air with city-to-ocean views and full spa.',
-    regionId: 'na-la',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-la-venice-rent',
-    title: 'Venice Beach Designer Home',
-    type: 'RENT',
-    price: '$28,000 / month',
-    stats: '3 Bed • 3 Bath • Rooftop Deck',
-    image: 'https://images.unsplash.com/photo-1564501049559-0738c2c20c0b?auto=format&fit=crop&q=80&w=1200',
-    description: 'A striking new-build home in Venice Beach with glass walls, rooftop terrace and ocean breezes.',
-    regionId: 'na-la',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-la-invest',
-    title: 'LA Luxury Residential Fund',
-    type: 'INVEST',
     price: '$15,000,000',
-    stats: '14% ROI • Trophy Portfolio',
-    image: 'https://images.unsplash.com/photo-1580655653885-65763b2597d0?auto=format&fit=crop&q=80&w=1200',
-    description: 'Gain exposure to a curated portfolio of Los Angeles trophy homes with institutional-grade management.',
+    stats: '7 Bed • 8 Bath • Auto Gallery',
+    image: '/PORTFOLIO/na-la-15m/1000086963.jpg',
+    description: 'Commanding views meet unparalleled luxury in this sprawling estate tailored for the ultimate collector.',
     regionId: 'na-la',
     continentId: 'north-america'
   },
-
-  // New York
   {
-    id: 'na-ny-central-park',
-    title: 'Central Park Tower Penthouse',
+    id: 'na-la-buy-4',
+    title: 'L.A. Super Prime Glass Estate III',
     type: 'BUY',
-    price: '$95,000,000',
-    stats: '5 Bed • 6 Bath • Central Park Views',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1200',
-    description: 'A full-floor penthouse at the top of the world\'s tallest residential tower above Central Park.',
-    regionId: 'na-new-york',
+    price: '$15,000,000',
+    stats: '5 Bed • 7 Bath • Multi-level Infinity Pool',
+    image: '/PORTFOLIO/na-la-15m/1000086964.jpg',
+    description: 'Dramatic architectural angles and cascading water features define this one-of-a-kind trophy property.',
+    regionId: 'na-la',
     continentId: 'north-america'
   },
   {
-    id: 'na-ny-tribeca-loft',
-    title: 'Tribeca Glass Loft',
-    type: 'BUY',
-    price: '$28,000,000',
-    stats: '4 Bed • 4 Bath • Hudson River Views',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'A converted industrial landmark in Tribeca with soaring glass ceilings and Hudson River panoramas.',
-    regionId: 'na-new-york',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-ny-soho-rent',
-    title: 'SoHo Luxury Loft',
-    type: 'RENT',
-    price: '$45,000 / month',
-    stats: '3 Bed • 3 Bath • Cast-Iron Architecture',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200',
-    description: 'A sprawling, fully furnished luxury loft in SoHo\'s most historics cast iron building, reimagined for modern living.',
-    regionId: 'na-new-york',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-ny-upper-east',
-    title: 'Upper East Side Duplex Penthouse',
-    type: 'BUY',
-    price: '$42,000,000',
-    stats: '5 Bed • 5 Bath • Private Rooftop',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-    description: 'An extraordinary duplex penthouse on the UES with a private rooftop garden and full Central Park views.',
-    regionId: 'na-new-york',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-ny-downtown-rent',
-    title: 'One World Trade Luxury Condo',
-    type: 'RENT',
-    price: '$38,000 / month',
-    stats: '3 Bed • 3 Bath • Downtown Skyline',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
-    description: 'A furnished super-prime condo adjacent to One World Trade with sweeping Lower Manhattan views.',
-    regionId: 'na-new-york',
-    continentId: 'north-america'
-  },
-  {
-    id: 'na-ny-invest',
-    title: 'Manhattan Trophy REIT',
+    id: 'na-la-invest-2',
+    title: 'West Hollywood Boutique Development',
     type: 'INVEST',
-    price: '$20,000,000',
-    stats: '13% ROI • Class-A Residential',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200',
-    description: 'Institutional-quality exposure to Manhattan\'s most coveted luxury residential towers.',
-    regionId: 'na-new-york',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • Mixed Use',
+    image: '/PORTFOLIO/na-la-15m/1000086965.jpg',
+    description: 'Rare opportunity to co-invest in a landmark ultra-luxury branded hotel and residence project in WeHo.',
+    regionId: 'na-la',
     continentId: 'north-america'
+  },
+  {
+    id: 'na-la-invest-3',
+    title: 'Sunset Strip Branded Residences',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Developer Equity • 18% ROI',
+    image: '/PORTFOLIO/na-la-15m/1000086966.jpg',
+    description: 'Early-stage equity access to one of the most highly anticipated residential developments on the Sunset Strip.',
+    regionId: 'na-la',
+    continentId: 'north-america'
+  }
+,
+  {
+    id: 'na-orlando-na-orlando-ph1-item-0',
+    title: 'Orlando Signature Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085825.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-1',
+    title: 'Orlando Signature Estate 2',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085827.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-2',
+    title: 'Orlando Signature Estate 3',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085829.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-3',
+    title: 'Orlando Signature Estate 4',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085831.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-4',
+    title: 'Orlando Signature Estate 5',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085833.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-5',
+    title: 'Orlando Signature Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085835.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-6',
+    title: 'Orlando Signature Estate 7',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085837.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-7',
+    title: 'Orlando Signature Estate 8',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085839.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-8',
+    title: 'Orlando Signature Estate 9',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085841.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-9',
+    title: 'Orlando Signature Estate 10',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085843.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-10',
+    title: 'Orlando Signature Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085845.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-11',
+    title: 'Orlando Signature Estate 12',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085847.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-12',
+    title: 'Orlando Signature Estate 13',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085849.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-13',
+    title: 'Orlando Signature Estate 14',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085851.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-14',
+    title: 'Orlando Signature Estate 15',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085853.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-15',
+    title: 'Orlando Signature Estate 16',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085855.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-16',
+    title: 'Orlando Signature Estate 17',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085857.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-17',
+    title: 'Orlando Signature Estate 18',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085859.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph1-item-18',
+    title: 'Orlando Signature Estate 19',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph1/1000085861.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-0',
+    title: 'Orlando Signature Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085869.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-1',
+    title: 'Orlando Signature Estate 2',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085873.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-2',
+    title: 'Orlando Signature Estate 3',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085875.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-3',
+    title: 'Orlando Signature Estate 4',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085879.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-4',
+    title: 'Orlando Signature Estate 5',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085881.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-5',
+    title: 'Orlando Signature Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085883.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-6',
+    title: 'Orlando Signature Estate 7',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085885.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-7',
+    title: 'Orlando Signature Estate 8',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085887.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-8',
+    title: 'Orlando Signature Estate 9',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085889.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-9',
+    title: 'Orlando Signature Estate 10',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085891.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-10',
+    title: 'Orlando Signature Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085893.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-11',
+    title: 'Orlando Signature Estate 12',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085895.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-12',
+    title: 'Orlando Signature Estate 13',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085897.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-13',
+    title: 'Orlando Signature Estate 14',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085899.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-14',
+    title: 'Orlando Signature Estate 15',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085907.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-15',
+    title: 'Orlando Signature Estate 16',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085909.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-16',
+    title: 'Orlando Signature Estate 17',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085911.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-17',
+    title: 'Orlando Signature Estate 18',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085917.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-18',
+    title: 'Orlando Signature Estate 19',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085919.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph2-item-19',
+    title: 'Orlando Signature Estate 20',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph2/1000085921.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-0',
+    title: 'Orlando Signature Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085923.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-1',
+    title: 'Orlando Signature Estate 2',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085925.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-2',
+    title: 'Orlando Signature Estate 3',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085927.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-3',
+    title: 'Orlando Signature Estate 4',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085929.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-4',
+    title: 'Orlando Signature Estate 5',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085931.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-5',
+    title: 'Orlando Signature Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085933.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-6',
+    title: 'Orlando Signature Estate 7',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085935.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-7',
+    title: 'Orlando Signature Estate 8',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085937.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-8',
+    title: 'Orlando Signature Estate 9',
+    type: 'BUY',
+    price: '$5,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085939.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-9',
+    title: 'Orlando Signature Estate 10',
+    type: 'RENT',
+    price: '$25,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085941.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-orlando-na-orlando-ph3-item-10',
+    title: 'Orlando Signature Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-orlando-ph3/1000085943.jpg',
+    description: 'A spectacular luxury property joining the Orlando Signature Estate collection, offering unparalleled design.',
+    regionId: 'na-orlando',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-0',
+    title: 'Miami Vice Penthouse 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-miami-ph1/1000085967.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-1',
+    title: 'Miami Vice Penthouse 2',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000085969.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-2',
+    title: 'Miami Vice Penthouse 3',
+    type: 'BUY',
+    price: '$10,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000085987.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-3',
+    title: 'Miami Vice Penthouse 4',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000085989.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-4',
+    title: 'Miami Vice Penthouse 5',
+    type: 'BUY',
+    price: '$10,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000085991.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-5',
+    title: 'Miami Vice Penthouse 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-miami-ph1/1000085993.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-6',
+    title: 'Miami Vice Penthouse 7',
+    type: 'BUY',
+    price: '$10,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086040.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-7',
+    title: 'Miami Vice Penthouse 8',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086042.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-8',
+    title: 'Miami Vice Penthouse 9',
+    type: 'BUY',
+    price: '$10,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086044.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-9',
+    title: 'Miami Vice Penthouse 10',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086046.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-10',
+    title: 'Miami Vice Penthouse 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/na-miami-ph1/1000086048.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-11',
+    title: 'Miami Vice Penthouse 12',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086050.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-12',
+    title: 'Miami Vice Penthouse 13',
+    type: 'BUY',
+    price: '$10,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086052.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'na-miami-na-miami-ph1-item-13',
+    title: 'Miami Vice Penthouse 14',
+    type: 'RENT',
+    price: '$40,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/na-miami-ph1/1000086054.jpg',
+    description: 'A spectacular luxury property joining the Miami Vice Penthouse collection, offering unparalleled design.',
+    regionId: 'na-miami',
+    continentId: 'north-america'
+  },
+  {
+    id: 'africa-west-wa-1111-item-0',
+    title: 'West Africa Luxury Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1111/1000085763.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-1',
+    title: 'West Africa Luxury Estate 2',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085764.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-2',
+    title: 'West Africa Luxury Estate 3',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085765.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-3',
+    title: 'West Africa Luxury Estate 4',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085766.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-4',
+    title: 'West Africa Luxury Estate 5',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085767.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-5',
+    title: 'West Africa Luxury Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1111/1000085768.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-6',
+    title: 'West Africa Luxury Estate 7',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085769.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-7',
+    title: 'West Africa Luxury Estate 8',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085770.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-8',
+    title: 'West Africa Luxury Estate 9',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085772.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-9',
+    title: 'West Africa Luxury Estate 10',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085773.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-10',
+    title: 'West Africa Luxury Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1111/1000085774.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-11',
+    title: 'West Africa Luxury Estate 12',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085775.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-12',
+    title: 'West Africa Luxury Estate 13',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085778.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-13',
+    title: 'West Africa Luxury Estate 14',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085780.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-14',
+    title: 'West Africa Luxury Estate 15',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1111/1000085781.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1111-item-15',
+    title: 'West Africa Luxury Estate 16',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1111/1000085782.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-0',
+    title: 'West Africa Luxury Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1112/1000023590.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-1',
+    title: 'West Africa Luxury Estate 2',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023591.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-2',
+    title: 'West Africa Luxury Estate 3',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023592.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-3',
+    title: 'West Africa Luxury Estate 4',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023593.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-4',
+    title: 'West Africa Luxury Estate 5',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023594.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-5',
+    title: 'West Africa Luxury Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1112/1000023595.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-6',
+    title: 'West Africa Luxury Estate 7',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023596.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-7',
+    title: 'West Africa Luxury Estate 8',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023597.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-8',
+    title: 'West Africa Luxury Estate 9',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023598.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-9',
+    title: 'West Africa Luxury Estate 10',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000023599.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-10',
+    title: 'West Africa Luxury Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1112/1000023600.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1112-item-11',
+    title: 'West Africa Luxury Estate 12',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1112/1000085783.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-0',
+    title: 'West Africa Luxury Estate 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1116/1000011099.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-1',
+    title: 'West Africa Luxury Estate 2',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011111.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-2',
+    title: 'West Africa Luxury Estate 3',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011118.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-3',
+    title: 'West Africa Luxury Estate 4',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011125.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-4',
+    title: 'West Africa Luxury Estate 5',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011126.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-5',
+    title: 'West Africa Luxury Estate 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1116/1000011127.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-6',
+    title: 'West Africa Luxury Estate 7',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011129.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-7',
+    title: 'West Africa Luxury Estate 8',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011131.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-8',
+    title: 'West Africa Luxury Estate 9',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011202.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-9',
+    title: 'West Africa Luxury Estate 10',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011284.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-10',
+    title: 'West Africa Luxury Estate 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1116/1000011491.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-11',
+    title: 'West Africa Luxury Estate 12',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011492.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-12',
+    title: 'West Africa Luxury Estate 13',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011771.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-13',
+    title: 'West Africa Luxury Estate 14',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011772.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-14',
+    title: 'West Africa Luxury Estate 15',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000011773.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-15',
+    title: 'West Africa Luxury Estate 16',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/wa-1116/1000013958.png',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-16',
+    title: 'West Africa Luxury Estate 17',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000013959.png',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-17',
+    title: 'West Africa Luxury Estate 18',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000013961.png',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-18',
+    title: 'West Africa Luxury Estate 19',
+    type: 'BUY',
+    price: '$8,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000013962.png',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-west-wa-1116-item-19',
+    title: 'West Africa Luxury Estate 20',
+    type: 'RENT',
+    price: '$30,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/wa-1116/1000063466.jpg',
+    description: 'A spectacular luxury property joining the West Africa Luxury Estate collection, offering unparalleled design.',
+    regionId: 'africa-west',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-0',
+    title: 'Tanzania Safari Lodge 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/africa-east-new/1000047534.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-1',
+    title: 'Tanzania Safari Lodge 2',
+    type: 'RENT',
+    price: '$12,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000047535.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-2',
+    title: 'Tanzania Safari Lodge 3',
+    type: 'BUY',
+    price: '$2,500,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000047536.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-3',
+    title: 'Tanzania Safari Lodge 4',
+    type: 'RENT',
+    price: '$12,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000047565.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-4',
+    title: 'Tanzania Safari Lodge 5',
+    type: 'BUY',
+    price: '$2,500,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000047700.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-5',
+    title: 'Tanzania Safari Lodge 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/africa-east-new/1000047701.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-6',
+    title: 'Tanzania Safari Lodge 7',
+    type: 'BUY',
+    price: '$2,500,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000048467.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-east-africa-east-new-item-7',
+    title: 'Tanzania Safari Lodge 8',
+    type: 'RENT',
+    price: '$12,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/africa-east-new/1000048469.png',
+    description: 'A spectacular luxury property joining the Tanzania Safari Lodge collection, offering unparalleled design.',
+    regionId: 'africa-east',
+    continentId: 'africa'
+  },
+  {
+    id: 'thailand-thailand-9m-item-0',
+    title: 'Koh Samui Beachfront 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/thailand-9m/1000086952.jpg',
+    description: 'A spectacular luxury property joining the Koh Samui Beachfront collection, offering unparalleled design.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'thailand-thailand-9m-item-1',
+    title: 'Koh Samui Beachfront 2',
+    type: 'RENT',
+    price: '$60,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/thailand-9m/1000086953.jpg',
+    description: 'A spectacular luxury property joining the Koh Samui Beachfront collection, offering unparalleled design.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'france-more-images-item-0',
+    title: 'European Grand Reserve 1',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/more-images/1000013963.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-1',
+    title: 'European Grand Reserve 2',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013965.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-2',
+    title: 'European Grand Reserve 3',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013967.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-3',
+    title: 'European Grand Reserve 4',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013968.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-4',
+    title: 'European Grand Reserve 5',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013969.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-5',
+    title: 'European Grand Reserve 6',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/more-images/1000013970.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-6',
+    title: 'European Grand Reserve 7',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013971.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-7',
+    title: 'European Grand Reserve 8',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013972.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-8',
+    title: 'European Grand Reserve 9',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013973.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-9',
+    title: 'European Grand Reserve 10',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013974.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-10',
+    title: 'European Grand Reserve 11',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/more-images/1000013976.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-11',
+    title: 'European Grand Reserve 12',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013979.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-12',
+    title: 'European Grand Reserve 13',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013980.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-13',
+    title: 'European Grand Reserve 14',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013983.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-14',
+    title: 'European Grand Reserve 15',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013985.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-15',
+    title: 'European Grand Reserve 16',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'Institutional Grade • High ROI Target',
+    image: '/PORTFOLIO/more-images/1000013986.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-16',
+    title: 'European Grand Reserve 17',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013988.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-17',
+    title: 'European Grand Reserve 18',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013990.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-18',
+    title: 'European Grand Reserve 19',
+    type: 'BUY',
+    price: '€15,000,000',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013997.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-more-images-item-19',
+    title: 'European Grand Reserve 20',
+    type: 'RENT',
+    price: '€35,000 / month',
+    stats: '5 Bed • 6 Bath • Luxury Finishes',
+    image: '/PORTFOLIO/more-images/1000013998.png',
+    description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
+    regionId: 'france',
+    continentId: 'europe'
   }
 ];
