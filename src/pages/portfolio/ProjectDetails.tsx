@@ -58,7 +58,7 @@ export function ProjectDetails() {
             className="h-full rounded-3xl overflow-hidden relative"
           >
             <img
-              src={project.image}
+              src={project.images[0]}
               alt={project.title}
               className="w-full h-full object-cover"
             />

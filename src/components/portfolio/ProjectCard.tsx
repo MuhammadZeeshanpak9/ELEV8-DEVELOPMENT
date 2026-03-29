@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
 import type { Project } from '@/data/portfolio';
 
 interface ProjectCardProps {
@@ -7,6 +9,24 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (project.images && project.images.length > 0) {
+      setCurrentIndex((prev) => (prev + 1) % project.images.length);
+    }
+  };
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (project.images && project.images.length > 0) {
+      setCurrentIndex((prev) => (prev - 1 + project.images.length) % project.images.length);
+    }
+  };
+
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'RENT':
@@ -26,13 +46,51 @@ export function ProjectCard({ project }: ProjectCardProps) {
         whileHover={{ y: -8 }}
         className="group bg-white rounded-2xl overflow-hidden border border-gray-200 cursor-pointer flex flex-col h-full shadow-sm hover:shadow-lg transition-shadow duration-300"
       >
-        <div className="relative h-64 overflow-hidden">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-          <div className="absolute top-4 right-4">
+        <div className="relative h-64 overflow-hidden bg-gray-100">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              src={project.images[currentIndex]}
+              alt={`${project.title} - View ${currentIndex + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </AnimatePresence>
+
+          {/* Carousel Controls */}
+          {project.images && project.images.length > 1 && (
+            <>
+              <button
+                onClick={prevImage}
+                className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-md hover:bg-black/50 transition-colors opacity-0 group-hover:opacity-100"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                onClick={nextImage}
+                className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-md hover:bg-black/50 transition-colors opacity-0 group-hover:opacity-100"
+              >
+                <ChevronRight size={18} />
+              </button>
+              
+              {/* Pagination Dots */}
+              <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                {project.images.map((_, idx) => (
+                  <div
+                    key={idx}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      idx === currentIndex ? 'w-4 bg-white' : 'w-1.5 bg-white/50'
+                    }`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+
+          <div className="absolute top-4 right-4 text-right">
             <span
               className={`px-3 py-1 text-xs font-semibold rounded-full border backdrop-blur-md ${getTypeColor(
                 project.type
@@ -40,6 +98,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
             >
               {project.type}
             </span>
+            {project.images && project.images.length > 1 && (
+              <div className="mt-2 text-[10px] font-medium text-white bg-black/40 px-2 py-0.5 rounded-full inline-block backdrop-blur-md">
+                {project.images.length} Photos
+              </div>
+            )}
           </div>
         </div>
         <div className="p-6 flex flex-col flex-grow">
