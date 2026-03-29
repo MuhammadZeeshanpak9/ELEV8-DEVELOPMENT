@@ -85,21 +85,21 @@ export const regionsData: Region[] = [
   // Asia
   {
     id: 'indonesia',
-    name: 'Indonesia',
+    name: 'BALI, INDONESIA',
     image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&q=80&w=1200',
     description: 'Tropical paradises and serene retreats in Bali and beyond.',
     continentId: 'asia'
   },
   {
     id: 'thailand',
-    name: 'Thailand',
+    name: 'PHUKET, THAILAND',
     image: '/PORTFOLIO/thailand-6m/1000086984.jpg',
     description: 'Exquisite villas in Phuket and Koh Samui, and modern stays in Bangkok.',
     continentId: 'asia'
   },
   {
     id: 'uae',
-    name: 'United Arab Emirates',
+    name: 'DUBAI, UAE',
     image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200',
     description: 'Futuristic penthouses and opulent villas in Dubai.',
     continentId: 'asia'
