@@ -31,7 +31,7 @@ export const continentsData: Continent[] = [
   {
     id: 'europe',
     name: 'Europe',
-    image: 'https://images.unsplash.com/photo-1564501049559-0738c2c20c0b?auto=format&fit=crop&q=80&w=1200',
+    image: '/PORTFOLIO/more-images/1000013963.png',
     description: 'Discover luxury properties across Europe\'s most iconic cities and coastlines.'
   },
   {
@@ -461,7 +461,7 @@ export const projectsData: Project[] = [
     type: 'BUY',
     price: 'R 95,000,000',
     stats: '5 Bed • 6 Bath • 12 Acres',
-    image: 'https://images.unsplash.com/photo-1564501049559-0738c2c20c0b?auto=format&fit=crop&q=80&w=1200',
+    image: '/PORTFOLIO/more-images/1000013963.png',
     description: 'An ultra-modern Winelands estate with a working vineyard, spa, and glass pavilion living spaces.',
     regionId: 'africa-south',
     continentId: 'africa'
