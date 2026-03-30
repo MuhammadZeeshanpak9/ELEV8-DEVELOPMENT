@@ -2,10 +2,7 @@ const fs = require('fs');
 
 let content = fs.readFileSync('src/data/portfolio.ts', 'utf8');
 
-// 1. Update Project interface from `image: string` to `images: string[]`
-content = content.replace(/  image: string;\r?\n  description: string;/g, "  images: string[];\n  description: string;");
-
-// 2. Parse out the projectsData string block
+// Parse out the projectsData string block
 const projectsStartIndex = content.indexOf('export const projectsData: Project[] = [');
 const projectsEndIndex = content.lastIndexOf('];');
 
@@ -26,43 +23,41 @@ const groups = {};
 const finalProjects = [];
 
 projectMatches.forEach(p => {
-  // Extract fields via regex
-  const titleMatch = p.match(/title:\s*['"]([^'"]+)['"]/);
-  const typeMatch = p.match(/type:\s*['"]([^'"]+)['"]/);
-  const priceMatch = p.match(/price:\s*['"]([^'"]+)['"]/);
-  const regionMatch = p.match(/regionId:\s*['"]([^'"]+)['"]/);
-  const continentMatch = p.match(/continentId:\s*['"]([^'"]+)['"]/);
-  const descMatch = p.match(/description:\s*['"]([^'"]+)['"]/);
-  const statsMatch = p.match(/stats:\s*['"]([^'"]+)['"]/);
-  
   // Extract either 'image' or 'images' depending on previous state
-  let imgUrl = '';
-  const imgMatch = p.match(/image:\s*['"]([^'"]+)['"]/);
-  if (imgMatch) imgUrl = imgMatch[1];
-
+  let imgUrls = [];
+  const imagesMatch = p.match(/images:\s*\[([\s\S]*?)\]/);
+  
+  if (imagesMatch) {
+    // extract all strings from the array block
+    const urls = imagesMatch[1].match(/['"]([^'"]+)['"]/g);
+    if(urls) {
+        imgUrls = urls.map(u => u.replace(/['"]/g, ''));
+    }
+  } else {
+    // fallback just in case
+    const imgMatch = p.match(/image:\s*['"]([^'"]+)['"]/);
+    if (imgMatch) imgUrls.push(imgMatch[1]);
+  }
+  
   let id = p.match(/id:\s*['"]([^'"]+)['"]/)[1];
   
-  const title = titleMatch ? titleMatch[1] : '';
-  
   let isGroupable = false;
-  let groupKey = '';
-  
-  if (imgUrl.includes('/PORTFOLIO/')) {
-    const parts = imgUrl.split('/');
+  let groupKey = id; // Default to ID for unique legacy items
+
+  // We are grouping by FOLDER exclusively!
+  // If ANY image in this project comes from a specific PORTFOLIO folder, group by that folder.
+  if (imgUrls.length > 0 && imgUrls[0].includes('/PORTFOLIO/')) {
+    const parts = imgUrls[0].split('/');
     if (parts.length >= 3) {
-      // url mapped as `/PORTFOLIO/folderName/image.jpg`
       const folder = parts[2];
-      groupKey = `${regionMatch[1]}-${folder}-${typeMatch[1]}`;
-      // Wait, if it's the exact same type/price, we group it.
-      // E.g., 'na-orlando-ph1-BUY'
+      groupKey = folder;
       isGroupable = true;
     }
   }
   
   if (!isGroupable) {
-    // If it's a legacy unsplash image, leave it alone but convert `image: '...'` to `images: ['...']`
-    let fixed = p.replace(/image:\s*['"]([^'"]+)['"]/, "images: ['$1']");
-    finalProjects.push(fixed);
+    // If it's a legacy unsplash image
+    finalProjects.push(p);
   } else {
     if (!groups[groupKey]) {
       groups[groupKey] = {
@@ -70,20 +65,25 @@ projectMatches.forEach(p => {
         images: []
       };
     }
-    groups[groupKey].images.push(`'${imgUrl}'`);
+    // Add all images to the folder group safely
+    imgUrls.forEach(url => {
+        if(!groups[groupKey].images.includes(`'${url}'`)) {
+            groups[groupKey].images.push(`'${url}'`);
+        }
+    });
   }
 });
 
 Object.values(groups).forEach(g => {
-  // Take the base string of the first item, replace title ending with numbers, update `image` to `images`
+  // Take the base string of the first item
   let str = g.baseStr;
   
   // Strip trailing numbers from title (e.g. "Orlando Signature Estate 1" -> "Orlando Signature Estate")
-  str = str.replace(/(title:\s*['"][a-zA-Z\s]+?)\s+\d+(['"])/, "$1$2");
+  str = str.replace(/(title:\s*['"][a-zA-Z\s]+?)\s+\d+(['"])/g, "$1$2");
   
-  // Replace `image: '...'` with `images: [ ... ]`
+  // Replace `images: [ ... ]` with our consolidated full-folder images array
   const imagesArrStr = `[\n      ${g.images.join(',\n      ')}\n    ]`;
-  str = str.replace(/image:\s*['"][^'"]+['"]/, `images: ${imagesArrStr}`);
+  str = str.replace(/images:\s*\[([\s\S]*?)\]/, `images: ${imagesArrStr}`);
   
   finalProjects.push(str);
 });
@@ -91,4 +91,4 @@ Object.values(groups).forEach(g => {
 const newProjectsBlock = `export const projectsData: Project[] = [\n${finalProjects.join(',\n')}\n];`;
 
 fs.writeFileSync('src/data/portfolio.ts', preamble + newProjectsBlock + endBlock);
-console.log('Portfolio grouped. Kept ' + finalProjects.length + ' base projects.');
+console.log('Portfolio merged purely by FOLDER. Total projects remaining: ' + finalProjects.length);

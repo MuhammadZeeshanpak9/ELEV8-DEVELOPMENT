@@ -4,15 +4,24 @@ import { Menu, X, Sparkles, BookOpen, Target, Eye, Gem, Compass, TrendingUp, Sen
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logo from '@/assets/Logo/1000077563.jpg';
 
-const hashLinks = [
+type NavLink = {
+  label: string;
+  href: string;
+  icon: any;
+  isRoute?: boolean;
+};
+
+// 6th is Portfolio, Last is Philosophy
+const navLinks: NavLink[] = [
   { label: 'Hi YOU', href: '#hero', icon: Sparkles },
   { label: 'Our Story', href: '#story', icon: BookOpen },
   { label: 'Mission', href: '#mission', icon: Target },
   { label: 'Vision', href: '#vision', icon: Eye },
   { label: 'Creations', href: '#creations', icon: Gem },
-  { label: 'Philosophy', href: '#philosophy', icon: Compass },
+  { label: 'Portfolio', href: '/portfolio', icon: Globe, isRoute: true },
   { label: 'Invest', href: '#actions', icon: TrendingUp },
   { label: 'Contact', href: '#contact', icon: Send },
+  { label: 'Philosophy', href: '#philosophy', icon: Compass },
 ];
 
 export function Header() {
@@ -82,37 +91,42 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
-              {hashLinks.map((link, index) => (
-                <motion.button
-                  key={link.href}
-                  onClick={() => handleHashNav(link.href)}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 + 0.3 }}
-                  className="relative px-4 py-2 text-sm text-gray-600 hover:text-brand-500 transition-colors duration-300 group"
-                >
-                  {link.label}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-brand-500 group-hover:w-3/4 transition-all duration-300" />
-                </motion.button>
-              ))}
-
-              {/* Portfolio link */}
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 }}
-              >
-                <Link
-                  to="/portfolio"
-                  className={`relative flex items-center gap-1.5 px-4 py-2 text-sm transition-colors duration-300 group ${
-                    isPortfolioPage ? 'text-brand-500' : 'text-gray-600 hover:text-brand-500'
-                  }`}
-                >
-                  <Globe size={14} />
-                  Portfolio
-                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-px bg-brand-500 transition-all duration-300 ${isPortfolioPage ? 'w-3/4' : 'w-0 group-hover:w-3/4'}`} />
-                </Link>
-              </motion.div>
+              {navLinks.map((link, index) => {
+                if (link.isRoute) {
+                  return (
+                    <motion.div
+                      key={link.href}
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.05 + 0.3 }}
+                    >
+                      <Link
+                        to={link.href}
+                        className={`relative flex items-center gap-1.5 px-4 py-2 text-sm transition-colors duration-300 group ${
+                          isPortfolioPage && link.href === '/portfolio' ? 'text-brand-500' : 'text-gray-600 hover:text-brand-500'
+                        }`}
+                      >
+                        <link.icon size={14} />
+                        {link.label}
+                        <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-px bg-brand-500 transition-all duration-300 ${isPortfolioPage && link.href === '/portfolio' ? 'w-3/4' : 'w-0 group-hover:w-3/4'}`} />
+                      </Link>
+                    </motion.div>
+                  );
+                }
+                return (
+                  <motion.button
+                    key={link.href}
+                    onClick={() => handleHashNav(link.href)}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.05 + 0.3 }}
+                    className="relative px-4 py-2 text-sm text-gray-600 hover:text-brand-500 transition-colors duration-300 group"
+                  >
+                    {link.label}
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-brand-500 group-hover:w-3/4 transition-all duration-300" />
+                  </motion.button>
+                );
+              })}
             </nav>
 
             {/* CTA Button */}
@@ -162,35 +176,41 @@ export function Header() {
               className="absolute top-24 left-6 right-6 glass-strong rounded-2xl p-6 shadow-lg"
             >
               <div className="flex flex-col gap-2">
-                {hashLinks.map((link, index) => (
-                  <motion.button
-                    key={link.href}
-                    onClick={() => handleHashNav(link.href)}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                    className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300 w-full text-left"
-                  >
-                    <link.icon size={18} strokeWidth={1.5} className="opacity-70" />
-                    <span className="font-medium tracking-wide">{link.label}</span>
-                  </motion.button>
-                ))}
-
-                {/* Mobile Portfolio link */}
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.45 }}
-                >
-                  <Link
-                    to="/portfolio"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300"
-                  >
-                    <Globe size={18} strokeWidth={1.5} className="opacity-70" />
-                    <span className="font-medium tracking-wide">Portfolio</span>
-                  </Link>
-                </motion.div>
+                {navLinks.map((link, index) => {
+                  if (link.isRoute) {
+                    return (
+                      <motion.div
+                        key={link.href}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.05 }}
+                      >
+                        <Link
+                          to={link.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300"
+                        >
+                          <link.icon size={18} strokeWidth={1.5} className="opacity-70" />
+                          <span className="font-medium tracking-wide">{link.label}</span>
+                        </Link>
+                      </motion.div>
+                    );
+                  }
+                  
+                  return (
+                    <motion.button
+                      key={link.href}
+                      onClick={() => handleHashNav(link.href)}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                      className="flex items-center gap-4 px-4 py-3 text-gray-700 hover:text-brand-500 hover:bg-brand-500/10 rounded-lg transition-all duration-300 w-full text-left"
+                    >
+                      <link.icon size={18} strokeWidth={1.5} className="opacity-70" />
+                      <span className="font-medium tracking-wide">{link.label}</span>
+                    </motion.button>
+                  );
+                })}
 
                 <motion.button
                   onClick={() => handleHashNav('#contact')}
