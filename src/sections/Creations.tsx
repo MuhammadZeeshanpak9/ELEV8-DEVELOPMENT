@@ -22,12 +22,12 @@ const regions: Region[] = [
   {
     name: 'Africa',
     subtitle: 'Continental Portfolio',
-    image: '/images/africa-main.jpg',
+    image: '/images/Africa.png',
     description: 'Pioneering sustainable development across the African continent, blending modern innovation with cultural heritage.',
     subRegions: [
       { name: 'East Africa', image: '/images/africa-main.jpg', projects: 12 },
       { name: 'West Africa', image: '/images/africa-main.jpg', projects: 8 },
-      { name: 'North Africa', image: '/images/middle-east.jpg', projects: 15 },
+      { name: 'North Africa', image: '/images/north-africa.png', projects: 15 },
       { name: 'South Africa', image: '/images/africa-main.jpg', projects: 10 },
       { name: 'Central Africa', image: '/images/africa-main.jpg', projects: 6 },
     ],
@@ -35,18 +35,17 @@ const regions: Region[] = [
   {
     name: 'North America',
     subtitle: 'Luxury Communities',
-    image: '/images/usa-main.jpg',
+    image: '/images/North America.png',
     description: 'Redefining urban living with cutting-edge residential and commercial developments.',
     subRegions: [
       { name: 'United States', image: '/images/usa-main.jpg', projects: 45 },
       { name: 'Canada', image: '/images/canada.jpg', projects: 18 },
-      { name: 'Mexico', image: '/images/mexico.jpg', projects: 12 },
     ],
   },
   {
     name: 'Europe',
     subtitle: 'Heritage Reimagined',
-    image: '/images/europe-main.jpg',
+    image: '/images/Europ.png',
     description: 'Where centuries of architectural excellence meet contemporary innovation.',
     subRegions: [
       { name: 'Western Europe', image: '/images/europe-main.jpg', projects: 32 },
@@ -58,7 +57,7 @@ const regions: Region[] = [
   {
     name: 'Asia',
     subtitle: 'Signature Residences',
-    image: '/images/asia-main.jpg',
+    image: '/images/Asia.png',
     description: 'Asia\'s most ambitious developments, from smart cities to luxury resorts.',
     subRegions: [
       { name: 'Middle East', image: '/images/middle-east.jpg', projects: 25 },
@@ -70,14 +69,18 @@ const regions: Region[] = [
   {
     name: 'Australia',
     subtitle: 'Coastal Futures',
-    image: '/images/australia-main.jpg',
+    image: '/images/AusTralia (2).png',
     description: 'Sustainable coastal living meets contemporary Australian design.',
   },
   {
     name: 'South America',
     subtitle: 'Emerging Horizons',
-    image: '/images/south-america-main.jpg',
+    image: '/images/South America.png',
     description: 'Transforming landscapes with innovative developments across the continent.',
+    subRegions: [
+      { name: 'Mexico', image: '/images/mexico.jpg', projects: 15 },
+      { name: 'Brazil', image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=1200', projects: 5 },
+    ],
   },
 ];
 

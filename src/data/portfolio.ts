@@ -31,37 +31,37 @@ export const continentsData: Continent[] = [
   {
     id: 'europe',
     name: 'Europe',
-    image: '/PORTFOLIO/more-images/1000013963.png',
+    image: '/images/Europ.png',
     description: 'Discover luxury properties across Europe\'s most iconic cities and coastlines.'
   },
   {
     id: 'asia',
     name: 'Asia',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/Asia.png',
     description: 'Experience unparalleled elegance in vibrant, modern, and traditional Asian landscapes.'
   },
   {
     id: 'americas',
-    name: 'Americas',
-    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=1200',
+    name: 'South America',
+    image: '/images/South America.png',
     description: 'Explore premier estates and modern developments across North and South America.'
   },
   {
     id: 'africa',
     name: 'Africa',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/Africa.png',
     description: 'Discover rare ultra-luxury estates across Africa\'s most breathtaking landscapes.'
   },
   {
     id: 'australia',
     name: 'Australia',
-    image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/AusTralia (2).png',
     description: 'World-class contemporary villas and penthouses along Australia\'s iconic coastlines.'
   },
   {
     id: 'north-america',
     name: 'North America',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/North America.png',
     description: 'Premium glass-and-steel residences across the USA and Canada\'s most coveted addresses.'
   }
 ];
@@ -112,6 +112,13 @@ export const regionsData: Region[] = [
     description: 'Stunning beachfront properties and jungle sanctuaries in Tulum.',
     continentId: 'americas'
   },
+  {
+    id: 'brazil',
+    name: 'Brazil',
+    image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=1200',
+    description: 'Ultra-modern eco-villas and beachfront luxury in Rio de Janeiro and Trancoso.',
+    continentId: 'americas'
+  },
   // Africa
   {
     id: 'africa-east',
@@ -130,7 +137,7 @@ export const regionsData: Region[] = [
   {
     id: 'africa-north',
     name: 'North Africa',
-    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/north-africa.png',
     description: 'Minimalist luxury riads and modern penthouses in Marrakech and Casablanca.',
     continentId: 'africa'
   },
@@ -628,5 +635,268 @@ export const projectsData: Project[] = [
     description: 'A spectacular luxury property joining the European Grand Reserve collection, offering unparalleled design.',
     regionId: 'france',
     continentId: 'europe'
+  },
+  {
+    id: 'uk-mock-1',
+    title: 'London Historic Glass Estate',
+    type: 'BUY',
+    price: '£18,500,000',
+    stats: '8 Bed • 9 Bath • 12,000 sqft',
+    images: ['/images/uk-estate.png'],
+    description: 'An ultra-luxurious historic countryside estate seamlessly blended with contemporary glass extensions.',
+    regionId: 'uk',
+    continentId: 'europe'
+  },
+  {
+    id: 'france-mock-1',
+    title: 'Riviera Glass Chateau',
+    type: 'BUY',
+    price: '€22,000,000',
+    stats: '7 Bed • 8 Bath • Infinity Pool',
+    images: ['/images/france-chateau.png'],
+    description: 'A modern, ultra-luxurious reimagined French Chateau in the French Riviera with expansive glass windows overlooking the Mediterranean.',
+    regionId: 'france',
+    continentId: 'europe'
+  },
+  {
+    id: 'bali-mock-1',
+    title: 'Ubud Jungle Sanctuary',
+    type: 'RENT',
+    price: '$12,000 / month',
+    stats: '4 Bed • 5 Bath • Cascading Pools',
+    images: ['/images/bali-villa.png'],
+    description: 'An ultra-luxurious tropical modern villa featuring cascading infinity pools integrated into a lush green jungle cliff side.',
+    regionId: 'indonesia',
+    continentId: 'asia'
+  },
+  {
+    id: 'phuket-mock-1',
+    title: 'Phuket Ocean Glass',
+    type: 'BUY',
+    price: '$6,500,000',
+    stats: '5 Bed • 6 Bath • Beachfront',
+    images: ['/images/phuket-villa.png'],
+    description: 'A minimalist glass and steel villa situated on a pristine white sand beach with wrap-around pools and ocean reflections.',
+    regionId: 'thailand',
+    continentId: 'asia'
+  },
+  {
+    id: 'dubai-mock-1',
+    title: 'Palm Jumeirah Sky Villa',
+    type: 'BUY',
+    price: 'AED 45,000,000',
+    stats: '6 Bed • 7 Bath • Sky Pool',
+    images: ['/images/dubai-penthouse.png'],
+    description: 'An ultra-luxurious futuristic penthouse featuring floor-to-ceiling smart glass and an incredible infinity pool overlooking the Palm Jumeirah.',
+    regionId: 'uae',
+    continentId: 'asia'
+  },
+  {
+    id: 'mexico-mock-1',
+    title: 'Tulum Jungle Retreat',
+    type: 'RENT',
+    price: '$8,000 / month',
+    stats: '4 Bed • 4 Bath • Private Cenote',
+    images: ['/images/mexico-mock-1.png'],
+    description: 'An ultra-luxurious eco-modern beachfront estate blending organic bamboo and stone with sleek modern lines.',
+    regionId: 'mexico',
+    continentId: 'americas'
+  },
+  {
+    id: 'mexico-mock-2',
+    title: 'Cancun Oceanfront Villa',
+    type: 'BUY',
+    price: '$4,200,000',
+    stats: '5 Bed • 6 Bath • Infinity Edge',
+    images: ['/images/mexico-mock-2.png'],
+    description: 'A spectacular contemporary glass villa overlooking the turquoise Caribbean sea at sunset.',
+    regionId: 'mexico',
+    continentId: 'americas'
+  },
+  {
+    id: 'brazil-mock-1',
+    title: 'Rio Coastal Penthouse',
+    type: 'BUY',
+    price: '$3,800,000',
+    stats: '3 Bed • 4 Bath • Panoramic Views',
+    images: ['/images/brazil-mock-1.png'],
+    description: 'Iconic beachfront penthouse featuring floor-to-ceiling windows overlooking Copacabana beach.',
+    regionId: 'brazil',
+    continentId: 'americas'
+  },
+  {
+    id: 'brazil-mock-2',
+    title: 'Trancoso Eco-Resort Villa',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: 'High ROI Target • Resort Amenities',
+    images: ['/images/brazil-mock-2.png'],
+    description: 'Invest in an ultra-luxurious tropical sanctuary nestled within Brazil\'s most exclusive eco-resort.',
+    regionId: 'brazil',
+    continentId: 'americas'
+  },
+
+  // ─── South Africa ───
+  {
+    id: 'africa-south-mock-1',
+    title: 'Cape Town Clifftop Mansion',
+    type: 'BUY',
+    price: '$9,500,000',
+    stats: '6 Bed • 7 Bath • Ocean Views',
+    images: ['/images/africa-south-mock-1.png'],
+    description: 'A breathtaking clifftop mansion in Cape Town with unobstructed ocean panoramas and glass-wrapped living spaces.',
+    regionId: 'africa-south',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-south-mock-2',
+    title: 'Winelands Estate & Spa',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: '10 Suites • Private Vineyard • 14% ROI',
+    images: ['/images/africa-south-mock-2.png'],
+    description: 'An extraordinary boutique estate set among award-winning vineyards in the Cape Winelands.',
+    regionId: 'africa-south',
+    continentId: 'africa'
+  },
+
+  // ─── Central Africa ───
+  {
+    id: 'africa-central-mock-1',
+    title: 'Kigali Hilltop Sanctuary',
+    type: 'RENT',
+    price: '$4,800 / month',
+    stats: '4 Bed • 4 Bath • City Panorama',
+    images: ['https://images.unsplash.com/photo-1542314831-c6a4d14faaf2?auto=format&fit=crop&q=80&w=1200'],
+    description: 'An ultra-modern hilltop villa in Kigali featuring panoramic views and contemporary African design.',
+    regionId: 'africa-central',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-central-mock-2',
+    title: 'Congo Basin Eco Lodge',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: '8 Suites • Eco-Resort • High ROI',
+    images: ['https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A high-end boutique eco-lodge development deep in the heart of the pristine Central African rainforest.',
+    regionId: 'africa-central',
+    continentId: 'africa'
+  },
+  {
+    id: 'africa-central-mock-3',
+    title: 'Kinshasa Riverfront Estate',
+    type: 'BUY',
+    price: '$2,100,000',
+    stats: '5 Bed • 6 Bath • River Views',
+    images: ['https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1200'],
+    description: 'An expansive luxury estate situated on the banks of the Congo River with floor-to-ceiling glass and exotic gardens.',
+    regionId: 'africa-central',
+    continentId: 'africa'
+  },
+
+  // ─── Sydney ───
+  {
+    id: 'aus-sydney-mock-1',
+    title: 'Bondi Glass Penthouse',
+    type: 'BUY',
+    price: 'AUD 14,000,000',
+    stats: '4 Bed • 5 Bath • Harbour Views',
+    images: ['https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=1200'],
+    description: 'An iconic glass penthouse above Bondi Beach with sweeping Sydney Harbour panoramas.',
+    regionId: 'australia-sydney',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-sydney-mock-2',
+    title: 'Northern Beaches Estate',
+    type: 'RENT',
+    price: 'AUD 15,000 / month',
+    stats: '5 Bed • 5 Bath • Beachfront',
+    images: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A sprawling beachfront estate on Sydney\'s Northern Beaches blending natural textures with modern glass luxury.',
+    regionId: 'australia-sydney',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-sydney-mock-3',
+    title: 'Sydney Cove Skyline Apartment',
+    type: 'BUY',
+    price: 'AUD 8,500,000',
+    stats: '3 Bed • 4 Bath • Skyline Views',
+    images: ['https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A sleek, designer skyline apartment offering unimpeded views of the Opera House with full glass walls.',
+    regionId: 'australia-sydney',
+    continentId: 'australia'
+  },
+
+  // ─── Melbourne ───
+  {
+    id: 'aus-melb-mock-1',
+    title: 'Brighton Bay Residence',
+    type: 'BUY',
+    price: 'AUD 8,500,000',
+    stats: '5 Bed • 4 Bath • Bay Views',
+    images: ['https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A stunning contemporary residence in Melbourne\'s most sought-after bayside suburb with floor-to-ceiling glass.',
+    regionId: 'australia-melbourne',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-melb-mock-2',
+    title: 'South Yarra City Tower Penthouse',
+    type: 'RENT',
+    price: 'AUD 12,000 / month',
+    stats: '3 Bed • 3 Bath • City Views',
+    images: ['https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A sky-high designer penthouse in the heart of South Yarra with bespoke glass interiors and panoramic city views.',
+    regionId: 'australia-melbourne',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-melb-mock-3',
+    title: 'Toorak Prestige Villa',
+    type: 'INVEST',
+    price: 'Contact for Pricing',
+    stats: '6 Bed • 7 Bath • Tennis Court',
+    images: ['https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&q=80&w=1200'],
+    description: 'An unparalleled prestige investment in Toorak featuring expansive grounds and cutting-edge architectural glass design.',
+    regionId: 'australia-melbourne',
+    continentId: 'australia'
+  },
+
+  // ─── Gold Coast ───
+  {
+    id: 'aus-gc-mock-1',
+    title: 'Main Beach Glass Tower',
+    type: 'BUY',
+    price: 'AUD 6,200,000',
+    stats: '3 Bed • 3 Bath • Oceanfront',
+    images: ['https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A premium glass tower penthouse on the Gold Coast beachfront with uninterrupted ocean views.',
+    regionId: 'australia-gold-coast',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-gc-mock-2',
+    title: 'Surfers Paradise Sky Villa',
+    type: 'RENT',
+    price: 'AUD 9,500 / month',
+    stats: '4 Bed • 4 Bath • Private Rooftop',
+    images: ['https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A lavish sky villa in Surfers Paradise featuring a private rooftop terrace and towering glass windows.',
+    regionId: 'australia-gold-coast',
+    continentId: 'australia'
+  },
+  {
+    id: 'aus-gc-mock-3',
+    title: 'Broadbeach Luxury Estate',
+    type: 'BUY',
+    price: 'AUD 11,500,000',
+    stats: '5 Bed • 6 Bath • Private Marina',
+    images: ['https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&q=80&w=1200'],
+    description: 'A spectacular waterfront compound in Broadbeach boasting its own private marina and expansive glass walls.',
+    regionId: 'australia-gold-coast',
+    continentId: 'australia'
   }
 ];
